@@ -7,6 +7,7 @@ import Layout from './components/Layout.js';
 
 import Account from './components/pages/Account.js';
 import Login from './components/pages/Login.js';
+import CreateAccount from './components/pages/CreateAccount.js';
 import Appointments from './components/pages/Appointments.js';
 import NoPage from "./components/pages/NoPage.js";
 import reportWebVitals from './reportWebVitals';
@@ -21,6 +22,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="account" element={<Account />} />
+          <Route path="create" element={<CreateAccount />} />
           <Route path="appointments" element={<Appointments />} />
           <Route path="*" element={<NoPage />} />
         </Route>
