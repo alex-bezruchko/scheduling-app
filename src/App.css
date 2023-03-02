@@ -1,3 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: rgb(9, 8, 8);
+    --color-secondary: rgb(73, 215, 199, 1);
+  }
+}
+
 .navbar {
   background-color: #222;
   display: flex;
@@ -25,12 +36,23 @@
   width: 100%;
 }
 
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.button-sec {
+  background-color: var(--color-secondary);
+}
+
 @media (min-width: 768px) {
 
   .container {
     width: 1200px;
     padding-left: 33px;
     padding-right: 33px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .navbar {
@@ -54,4 +76,11 @@
     padding-left: 33px;
     padding-right: 33px;
   }
+
+  .login {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }

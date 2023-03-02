@@ -6,9 +6,9 @@ import Home from './App.js';
 import Layout from './components/Layout.js';
 
 import Account from './components/pages/Account.js';
+import Login from './components/pages/Login.js';
 import Appointments from './components/pages/Appointments.js';
-
-
+import NoPage from "./components/pages/NoPage.js";
 import reportWebVitals from './reportWebVitals';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,9 +19,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="login" element={<Login />} />
           <Route path="account" element={<Account />} />
           <Route path="appointments" element={<Appointments />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
+          <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
