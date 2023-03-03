@@ -5,7 +5,7 @@ const Login = () => {
     return (
         <div className="max-w-md mx-auto my-10">
             <div className="bg-white shadow-md py-10 border border-gray-200 rounded-lg flex justify-center dark:bg-gray-800 dark:border-gray-700">
-                <form className="space-y-6" action="#">
+                <form className="space-y-6 w-full px-9 py-9" action="#">
                     <h3 className="text-xl font-medium text-gray-900 dark:text-white">Sign in</h3>
 
                     <div className="flex flex-col">
@@ -34,12 +34,11 @@ const Login = () => {
                             </div>
                             <div className="text-sm ml-3">
                                 <label htmlFor="remember" className="font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                                <Link to="/password-reset" className="navbar-link">Reset password</Link>
                             </div>
                         </div>
 
                     </div>
-                    <a href="#" className="text-sm text-blue-700 hover:underline ml-auto dark:text-blue-500">Forgot
-                        Password?</a>
                     <button type="submit" className="w-full text-white button-sec focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Login to your account</button>
                     <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
                         Not registered? <Link to="/create" className="navbar-link">Create
