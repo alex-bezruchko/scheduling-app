@@ -8,6 +8,22 @@ exports.up = function (knex) {
             table.increments('id').primary();
             table.string('name').notNullable();
         }),
+
+        knex.schema.createTable('users', function (table) {
+            table.increments('id').primary();
+            table.string('username').notNullable();
+            table.string('email').notNullable();
+            table.string('first_name').notNullable();
+            table.string('last_name').notNullable();
+            table.string('street_address').notNullable();
+            table.string('apt_suite');
+            table.string('city').notNullable();
+            table.string('state').notNullable();
+            table.string('zip_code').notNullable();
+            table.integer('user_type_id').unsigned().notNullable();
+            table.foreign('user_type_id').references('user_types.id');
+        }),
+
     ]);
 };
 
