@@ -34,6 +34,14 @@ exports.up = function (knex) {
             table.string('zip_code').notNullable();
         }),
 
+        knex.schema.createTable('appointments', function (table) {
+            table.increments('id').primary();
+            table.datetime('time').notNullable();
+            table.integer('user_id').unsigned().notNullable();
+            table.integer('location_id').unsigned().notNullable();
+            table.foreign('user_id').references('users.id');
+            table.foreign('location_id').references('locations.id');
+        })
     ]);
 };
 
