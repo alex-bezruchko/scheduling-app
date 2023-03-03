@@ -24,6 +24,16 @@ exports.up = function (knex) {
             table.foreign('user_type_id').references('user_types.id');
         }),
 
+        knex.schema.createTable('locations', function (table) {
+            table.increments('id').primary();
+            table.string('name').notNullable();
+            table.string('street_address').notNullable();
+            table.string('apt_suite');
+            table.string('city').notNullable();
+            table.string('state').notNullable();
+            table.string('zip_code').notNullable();
+        }),
+
     ]);
 };
 
