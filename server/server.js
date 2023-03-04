@@ -16,8 +16,27 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors())
 
-function generateAccessToken(username) {
-    return jwt.sign(username, process.env.APP_TOKEN, { expiresIn: '1800s' });
+function authenticate(req, res, next) {
+    const token = req.get("Authorization")
+    // const token = authHeader.split(" ")[1]
+    const secret = "SECRET"
+    jwt.verify(token, secret, (error, payload) => {
+        console.log(token)
+        if (error) {
+            throw new Error("sign in error!")
+        } else {
+            db("users")
+                .where({ username: payload.username })
+                .first()
+                .then(user => {
+                    req.user = user
+                    next()
+                }).catch(error => {
+                    res.json({ message: error.message })
+                })
+        }
+
+    })
 }
 
 app.post("/login", (req, response) => {
@@ -80,7 +99,7 @@ app.post('/register', (req, res) => {
         })
 })
 
-app.get('/users', (req, res) => {
+app.get('/users', authenticate, (req, res) => {
     res.send('Hello from express server')
 })
 
