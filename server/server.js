@@ -20,8 +20,34 @@ function generateAccessToken(username) {
     return jwt.sign(username, process.env.APP_TOKEN, { expiresIn: '1800s' });
 }
 
-app.get('/login', (req, res) => {
-    res.send('Login')
+app.post("/login", (req, response) => {
+    const user = req.body
+    db("users")
+        .where({ username: user.username })
+        .first()
+        .then(retrievedUser => {
+            if (!retrievedUser) throw new Error("user not found!")
+            return Promise.all([
+                bcrypt.compare(user.password, retrievedUser.password_hash),
+                Promise.resolve(retrievedUser)
+            ])
+                .then(results => {
+                    const areSamePasswords = results[0]
+                    if (!areSamePasswords) throw new Error("Invalid credentials")
+                    const user = results[1]
+                    const payload = { username: user.username }
+                    const secret = "SECRET"
+                    jwt.sign(payload, secret, (error, token) => {
+                        if (error) {
+                            throw new Error("Sign in error!")
+                        } else {
+                            response.json({ token, user })
+                        }
+                    })
+                }).catch(error => {
+                    response.json({ message: error.message })
+                })
+        })
 })
 
 app.post('/register', (req, res) => {
