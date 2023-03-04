@@ -10,605 +10,605 @@ exports.seed = async function (knex) {
     .then(function () {
       return knex('users').insert([
         {
-          username: "hlangfield0", first_name: "Hamlen", last_name: "Langfield", email: "hlangfield0@comcast.net", street_address: "0 Dapin Pass", street_address_2: "Suite 43", city: "San Jose", state: "California", zip_code: "95128", user_type_id: 2
+          username: "hlangfield0", password_hash: "hlangfield0_pass", first_name: "Hamlen", last_name: "Langfield", email: "hlangfield0@comcast.net", street_address: "0 Dapin Pass", street_address_2: "Suite 43", city: "San Jose", state: "California", zip_code: "95128", user_type_id: 2
         },
         {
-          username: "mcayser1", first_name: "Merla", last_name: "Cayser", email: "mcayser1@dedecms.com", street_address: "92580 Bartillon Hill", street_address_2: "Room 66", city: "Milwaukee", state: "Wisconsin", zip_code: "53210", user_type_id: 2
+          username: "mcayser1", password_hash: "mcayser1_pass", first_name: "Merla", last_name: "Cayser", email: "mcayser1@dedecms.com", street_address: "92580 Bartillon Hill", street_address_2: "Room 66", city: "Milwaukee", state: "Wisconsin", zip_code: "53210", user_type_id: 2
         },
         {
-          username: "kcocklie2", first_name: "Kiel", last_name: "Cocklie", email: "kcocklie2@tamu.edu", street_address: "100 Union Drive", street_address_2: "Apt 318", city: "Charlotte", state: "North Carolina", zip_code: "28235", user_type_id: 1
+          username: "kcocklie2", password_hash: "kcocklie2_pass", first_name: "Kiel", last_name: "Cocklie", email: "kcocklie2@tamu.edu", street_address: "100 Union Drive", street_address_2: "Apt 318", city: "Charlotte", state: "North Carolina", zip_code: "28235", user_type_id: 1
         },
         {
-          username: "bhallatt3", first_name: "Brandais", last_name: "Hallatt", email: "bhallatt3@bloglovin.com", street_address: "75891 Pennsylvania Terrace", street_address_2: "Room 1311", city: "Des Moines", state: "Iowa", zip_code: "50981", user_type_id: 2
+          username: "bhallatt3", password_hash: "bhallatt3_pass", first_name: "Brandais", last_name: "Hallatt", email: "bhallatt3@bloglovin.com", street_address: "75891 Pennsylvania Terrace", street_address_2: "Room 1311", city: "Des Moines", state: "Iowa", zip_code: "50981", user_type_id: 2
         },
         {
-          username: "aefford4", first_name: "Amos", last_name: "Efford", email: "aefford4@acquirethisname.com", street_address: "3 Jenna Park", street_address_2: "PO Box 73060", city: "New Orleans", state: "Louisiana", zip_code: "70149", user_type_id: 2
+          username: "aefford4", password_hash: "aefford4_pass", first_name: "Amos", last_name: "Efford", email: "aefford4@acquirethisname.com", street_address: "3 Jenna Park", street_address_2: "PO Box 73060", city: "New Orleans", state: "Louisiana", zip_code: "70149", user_type_id: 2
         },
         {
-          username: "hdillamore5", first_name: "Hurleigh", last_name: "Dillamore", email: "hdillamore5@epa.gov", street_address: "6 Fremont Trail", street_address_2: "PO Box 83863", city: "Newark", state: "New Jersey", zip_code: "07188", user_type_id: 2
+          username: "hdillamore5", password_hash: "hdillamore5_pass", first_name: "Hurleigh", last_name: "Dillamore", email: "hdillamore5@epa.gov", street_address: "6 Fremont Trail", street_address_2: "PO Box 83863", city: "Newark", state: "New Jersey", zip_code: "07188", user_type_id: 2
         },
         {
-          username: "groux6", first_name: "Gale", last_name: "Roux", email: "groux6@ibm.com", street_address: "10961 East Plaza", street_address_2: "12th Floor", city: "Memphis", state: "Tennessee", zip_code: "38119", user_type_id: 1
+          username: "groux6", password_hash: "groux6_pass", first_name: "Gale", last_name: "Roux", email: "groux6@ibm.com", street_address: "10961 East Plaza", street_address_2: "12th Floor", city: "Memphis", state: "Tennessee", zip_code: "38119", user_type_id: 1
         },
         {
-          username: "skeogh7", first_name: "Sinclare", last_name: "Keogh", email: "skeogh7@time.com", street_address: "1 Corben Street", street_address_2: "Room 709", city: "Salt Lake City", state: "Utah", zip_code: "84140", user_type_id: 1
+          username: "skeogh7", password_hash: "skeogh7_pass", first_name: "Sinclare", last_name: "Keogh", email: "skeogh7@time.com", street_address: "1 Corben Street", street_address_2: "Room 709", city: "Salt Lake City", state: "Utah", zip_code: "84140", user_type_id: 1
         },
         {
-          username: "mgummer8", first_name: "Mic", last_name: "Gummer", email: "mgummer8@mtv.com", street_address: "1 Menomonie Way", street_address_2: "PO Box 45818", city: "Canton", state: "Ohio", zip_code: "44705", user_type_id: 1
+          username: "mgummer8", password_hash: "mgummer8_pass", first_name: "Mic", last_name: "Gummer", email: "mgummer8@mtv.com", street_address: "1 Menomonie Way", street_address_2: "PO Box 45818", city: "Canton", state: "Ohio", zip_code: "44705", user_type_id: 1
         },
         {
-          username: "obozward9", first_name: "Orin", last_name: "Bozward", email: "obozward9@slashdot.org", street_address: "16 Annamark Point", street_address_2: "PO Box 27444", city: "Memphis", state: "Tennessee", zip_code: "38181", user_type_id: 1
+          username: "obozward9", password_hash: "obozward9_pass", first_name: "Orin", last_name: "Bozward", email: "obozward9@slashdot.org", street_address: "16 Annamark Point", street_address_2: "PO Box 27444", city: "Memphis", state: "Tennessee", zip_code: "38181", user_type_id: 1
         },
         {
-          username: "hbarnardoa", first_name: "Hermia", last_name: "Barnardo", email: "hbarnardoa@boston.com", street_address: "149 Schurz Way", street_address_2: "Apt 135", city: "San Diego", state: "California", zip_code: "92165", user_type_id: 1
+          username: "hbarnardoa", password_hash: "hbarnardoa_pass", first_name: "Hermia", last_name: "Barnardo", email: "hbarnardoa@boston.com", street_address: "149 Schurz Way", street_address_2: "Apt 135", city: "San Diego", state: "California", zip_code: "92165", user_type_id: 1
         },
         {
-          username: "mcritchleyb", first_name: "Mia", last_name: "Critchley", email: "mcritchleyb@psu.edu", street_address: "33860 Muir Alley", street_address_2: "PO Box 45571", city: "New Orleans", state: "Louisiana", zip_code: "70165", user_type_id: 1
+          username: "mcritchleyb", password_hash: "mcritchleyb_pass", first_name: "Mia", last_name: "Critchley", email: "mcritchleyb@psu.edu", street_address: "33860 Muir Alley", street_address_2: "PO Box 45571", city: "New Orleans", state: "Louisiana", zip_code: "70165", user_type_id: 1
         },
         {
-          username: "pdenajerac", first_name: "Peggy", last_name: "de Najera", email: "pdenajerac@1688.com", street_address: "5 Kipling Way", street_address_2: "9th Floor", city: "Orlando", state: "Florida", zip_code: "32803", user_type_id: 2
+          username: "pdenajerac", password_hash: "pdenajerac_pass", first_name: "Peggy", last_name: "de Najera", email: "pdenajerac@1688.com", street_address: "5 Kipling Way", street_address_2: "9th Floor", city: "Orlando", state: "Florida", zip_code: "32803", user_type_id: 2
         },
         {
-          username: "wlakerd", first_name: "Wilmette", last_name: "Laker", email: "wlakerd@ezinearticles.com", street_address: "585 Meadow Ridge Park", street_address_2: "PO Box 71937", city: "Louisville", state: "Kentucky", zip_code: "40233", user_type_id: 2
+          username: "wlakerd", password_hash: "wlakerd_pass", first_name: "Wilmette", last_name: "Laker", email: "wlakerd@ezinearticles.com", street_address: "585 Meadow Ridge Park", street_address_2: "PO Box 71937", city: "Louisville", state: "Kentucky", zip_code: "40233", user_type_id: 2
         },
         {
-          username: "pstarkeye", first_name: "Perle", last_name: "Starkey", email: "pstarkeye@ning.com", street_address: "61998 Schlimgen Drive", street_address_2: "Suite 26", city: "New York City", state: "New York", zip_code: "10125", user_type_id: 1
+          username: "pstarkeye", password_hash: "pstarkeye_pass", first_name: "Perle", last_name: "Starkey", email: "pstarkeye@ning.com", street_address: "61998 Schlimgen Drive", street_address_2: "Suite 26", city: "New York City", state: "New York", zip_code: "10125", user_type_id: 1
         },
         {
-          username: "mmendenhallf", first_name: "Mame", last_name: "Mendenhall", email: "mmendenhallf@altervista.org", street_address: "73096 Buhler Parkway", street_address_2: "Room 121", city: "Denver", state: "Colorado", zip_code: "80241", user_type_id: 2
+          username: "mmendenhallf", password_hash: "mmendenhallf_pass", first_name: "Mame", last_name: "Mendenhall", email: "mmendenhallf@altervista.org", street_address: "73096 Buhler Parkway", street_address_2: "Room 121", city: "Denver", state: "Colorado", zip_code: "80241", user_type_id: 2
         },
         {
-          username: "hmccreadieg", first_name: "Haley", last_name: "McCreadie", email: "hmccreadieg@msn.com", street_address: "7801 Laurel Alley", street_address_2: "9th Floor", city: "Naperville", state: "Illinois", zip_code: "60567", user_type_id: 2
+          username: "hmccreadieg", password_hash: "hmccreadieg_pass", first_name: "Haley", last_name: "McCreadie", email: "hmccreadieg@msn.com", street_address: "7801 Laurel Alley", street_address_2: "9th Floor", city: "Naperville", state: "Illinois", zip_code: "60567", user_type_id: 2
         },
         {
-          username: "rguillainh", first_name: "Rafi", last_name: "Guillain", email: "rguillainh@japanpost.jp", street_address: "28917 8th Lane", street_address_2: "Room 102", city: "Fort Collins", state: "Colorado", zip_code: "80525", user_type_id: 2
+          username: "rguillainh", password_hash: "rguillainh_pass", first_name: "Rafi", last_name: "Guillain", email: "rguillainh@japanpost.jp", street_address: "28917 8th Lane", street_address_2: "Room 102", city: "Fort Collins", state: "Colorado", zip_code: "80525", user_type_id: 2
         },
         {
-          username: "acrokeri", first_name: "Alys", last_name: "Croker", email: "acrokeri@github.io", street_address: "7 Erie Pass", street_address_2: "Apt 1170", city: "Lawrenceville", state: "Georgia", zip_code: "30045", user_type_id: 1
+          username: "acrokeri", password_hash: "acrokeri_pass", first_name: "Alys", last_name: "Croker", email: "acrokeri@github.io", street_address: "7 Erie Pass", street_address_2: "Apt 1170", city: "Lawrenceville", state: "Georgia", zip_code: "30045", user_type_id: 1
         },
         {
-          username: "dsnooksj", first_name: "Dotti", last_name: "Snooks", email: "dsnooksj@wikimedia.org", street_address: "8 Bayside Avenue", street_address_2: "Room 28", city: "Fort Smith", state: "Arkansas", zip_code: "72916", user_type_id: 1
+          username: "dsnooksj", password_hash: "dsnooksj_pass", first_name: "Dotti", last_name: "Snooks", email: "dsnooksj@wikimedia.org", street_address: "8 Bayside Avenue", street_address_2: "Room 28", city: "Fort Smith", state: "Arkansas", zip_code: "72916", user_type_id: 1
         },
         {
-          username: "orutterk", first_name: "Orbadiah", last_name: "Rutter", email: "orutterk@fastcompany.com", street_address: "7371 Loomis Junction", street_address_2: "PO Box 7822", city: "New York City", state: "New York", zip_code: "10090", user_type_id: 2
+          username: "orutterk", password_hash: "orutterk_pass", first_name: "Orbadiah", last_name: "Rutter", email: "orutterk@fastcompany.com", street_address: "7371 Loomis Junction", street_address_2: "PO Box 7822", city: "New York City", state: "New York", zip_code: "10090", user_type_id: 2
         },
         {
-          username: "jbowermanl", first_name: "Janot", last_name: "Bowerman", email: "jbowermanl@epa.gov", street_address: "47 Sycamore Place", street_address_2: "Room 1244", city: "Las Vegas", state: "Nevada", zip_code: "89178", user_type_id: 2
+          username: "jbowermanl", password_hash: "jbowermanl_pass", first_name: "Janot", last_name: "Bowerman", email: "jbowermanl@epa.gov", street_address: "47 Sycamore Place", street_address_2: "Room 1244", city: "Las Vegas", state: "Nevada", zip_code: "89178", user_type_id: 2
         },
         {
-          username: "abruntm", first_name: "Arline", last_name: "Brunt", email: "abruntm@tinypic.com", street_address: "75297 Northport Drive", street_address_2: "11th Floor", city: "Boca Raton", state: "Florida", zip_code: "33499", user_type_id: 2
+          username: "abruntm", password_hash: "abruntm_pass", first_name: "Arline", last_name: "Brunt", email: "abruntm@tinypic.com", street_address: "75297 Northport Drive", street_address_2: "11th Floor", city: "Boca Raton", state: "Florida", zip_code: "33499", user_type_id: 2
         },
         {
-          username: "atissingtonn", first_name: "Alric", last_name: "Tissington", email: "atissingtonn@tmall.com", street_address: "3 Little Fleur Park", street_address_2: "10th Floor", city: "Los Angeles", state: "California", zip_code: "90060", user_type_id: 1
+          username: "atissingtonn", password_hash: "atissingtonn_pass", first_name: "Alric", last_name: "Tissington", email: "atissingtonn@tmall.com", street_address: "3 Little Fleur Park", street_address_2: "10th Floor", city: "Los Angeles", state: "California", zip_code: "90060", user_type_id: 1
         },
         {
-          username: "kdedmamo", first_name: "Kennett", last_name: "Dedmam", email: "kdedmamo@toplist.cz", street_address: "956 Canary Pass", street_address_2: "Apt 1024", city: "Cleveland", state: "Ohio", zip_code: "44111", user_type_id: 1
+          username: "kdedmamo", password_hash: "kdedmamo_pass", first_name: "Kennett", last_name: "Dedmam", email: "kdedmamo@toplist.cz", street_address: "956 Canary Pass", street_address_2: "Apt 1024", city: "Cleveland", state: "Ohio", zip_code: "44111", user_type_id: 1
         },
         {
-          username: "hmaggillandreisp", first_name: "Holt", last_name: "Maggill'Andreis", email: "hmaggillandreisp@cloudflare.com", street_address: "66 Di Loreto Junction", street_address_2: "16th Floor", city: "Orlando", state: "Florida", zip_code: "32830", user_type_id: 1
+          username: "hmaggillandreisp", password_hash: "hmaggillandreisp_pass", first_name: "Holt", last_name: "Maggill'Andreis", email: "hmaggillandreisp@cloudflare.com", street_address: "66 Di Loreto Junction", street_address_2: "16th Floor", city: "Orlando", state: "Florida", zip_code: "32830", user_type_id: 1
         },
         {
-          username: "mpitfordq", first_name: "Mariska", last_name: "Pitford", email: "mpitfordq@pinterest.com", street_address: "33 Marquette Park", street_address_2: "PO Box 76176", city: "Denver", state: "Colorado", zip_code: "80217", user_type_id: 1
+          username: "mpitfordq", password_hash: "mpitfordq_pass", first_name: "Mariska", last_name: "Pitford", email: "mpitfordq@pinterest.com", street_address: "33 Marquette Park", street_address_2: "PO Box 76176", city: "Denver", state: "Colorado", zip_code: "80217", user_type_id: 1
         },
         {
-          username: "kbernardotter", first_name: "Kip", last_name: "Bernardotte", email: "kbernardotter@reference.com", street_address: "8199 South Center", street_address_2: "Apt 1535", city: "Tampa", state: "Florida", zip_code: "33673", user_type_id: 1
+          username: "kbernardotter", password_hash: "kbernardotter_pass", first_name: "Kip", last_name: "Bernardotte", email: "kbernardotter@reference.com", street_address: "8199 South Center", street_address_2: "Apt 1535", city: "Tampa", state: "Florida", zip_code: "33673", user_type_id: 1
         },
         {
-          username: "jgreenleafs", first_name: "Jessalyn", last_name: "Greenleaf", email: "jgreenleafs@cafepress.com", street_address: "9 Mockingbird Junction", street_address_2: "Apt 451", city: "Detroit", state: "Michigan", zip_code: "48295", user_type_id: 2
+          username: "jgreenleafs", password_hash: "jgreenleafs_pass", first_name: "Jessalyn", last_name: "Greenleaf", email: "jgreenleafs@cafepress.com", street_address: "9 Mockingbird Junction", street_address_2: "Apt 451", city: "Detroit", state: "Michigan", zip_code: "48295", user_type_id: 2
         },
         {
-          username: "nstoditt", first_name: "Nils", last_name: "Stodit", email: "nstoditt@hibu.com", street_address: "591 Green Ridge Street", street_address_2: "6th Floor", city: "Houston", state: "Texas", zip_code: "77035", user_type_id: 2
+          username: "nstoditt", password_hash: "nstoditt_pass", first_name: "Nils", last_name: "Stodit", email: "nstoditt@hibu.com", street_address: "591 Green Ridge Street", street_address_2: "6th Floor", city: "Houston", state: "Texas", zip_code: "77035", user_type_id: 2
         },
         {
-          username: "dcoaleu", first_name: "Dore", last_name: "Coale", email: "dcoaleu@marriott.com", street_address: "68 Summer Ridge Point", street_address_2: "Room 1008", city: "Columbus", state: "Ohio", zip_code: "43215", user_type_id: 2
+          username: "dcoaleu", password_hash: "dcoaleu_pass", first_name: "Dore", last_name: "Coale", email: "dcoaleu@marriott.com", street_address: "68 Summer Ridge Point", street_address_2: "Room 1008", city: "Columbus", state: "Ohio", zip_code: "43215", user_type_id: 2
         },
         {
-          username: "sbodicumv", first_name: "Sky", last_name: "Bodicum", email: "sbodicumv@blog.com", street_address: "395 Browning Road", street_address_2: "PO Box 90723", city: "Colorado Springs", state: "Colorado", zip_code: "80951", user_type_id: 1
+          username: "sbodicumv", password_hash: "sbodicumv_pass", first_name: "Sky", last_name: "Bodicum", email: "sbodicumv@blog.com", street_address: "395 Browning Road", street_address_2: "PO Box 90723", city: "Colorado Springs", state: "Colorado", zip_code: "80951", user_type_id: 1
         },
         {
-          username: "yroughtw", first_name: "Yorgos", last_name: "Rought", email: "yroughtw@phpbb.com", street_address: "884 Melody Circle", street_address_2: "Room 1171", city: "Washington", state: "District of Columbia", zip_code: "20036", user_type_id: 1
+          username: "yroughtw", password_hash: "yroughtw_pass", first_name: "Yorgos", last_name: "Rought", email: "yroughtw@phpbb.com", street_address: "884 Melody Circle", street_address_2: "Room 1171", city: "Washington", state: "District of Columbia", zip_code: "20036", user_type_id: 1
         },
         {
-          username: "ddavidoviczx", first_name: "Dorian", last_name: "Davidovicz", email: "ddavidoviczx@networksolutions.com", street_address: "8 Saint Paul Junction", street_address_2: "Apt 253", city: "Flushing", state: "New York", zip_code: "11355", user_type_id: 2
+          username: "ddavidoviczx", password_hash: "ddavidoviczx_pass", first_name: "Dorian", last_name: "Davidovicz", email: "ddavidoviczx@networksolutions.com", street_address: "8 Saint Paul Junction", street_address_2: "Apt 253", city: "Flushing", state: "New York", zip_code: "11355", user_type_id: 2
         },
         {
-          username: "haleksandrevy", first_name: "Herta", last_name: "Aleksandrev", email: "haleksandrevy@artisteer.com", street_address: "1214 Killdeer Court", street_address_2: "Suite 42", city: "Birmingham", state: "Alabama", zip_code: "35290", user_type_id: 2
+          username: "haleksandrevy", password_hash: "haleksandrevy_pass", first_name: "Herta", last_name: "Aleksandrev", email: "haleksandrevy@artisteer.com", street_address: "1214 Killdeer Court", street_address_2: "Suite 42", city: "Birmingham", state: "Alabama", zip_code: "35290", user_type_id: 2
         },
         {
-          username: "bchampneysz", first_name: "Bianca", last_name: "Champneys", email: "bchampneysz@apache.org", street_address: "08 Gulseth Hill", street_address_2: "Suite 49", city: "San Bernardino", state: "California", zip_code: "92424", user_type_id: 2
+          username: "bchampneysz", password_hash: "bchampneysz_pass", first_name: "Bianca", last_name: "Champneys", email: "bchampneysz@apache.org", street_address: "08 Gulseth Hill", street_address_2: "Suite 49", city: "San Bernardino", state: "California", zip_code: "92424", user_type_id: 2
         },
         {
-          username: "ecurneen10", first_name: "Elisabeth", last_name: "Curneen", email: "ecurneen10@bloglovin.com", street_address: "7854 Moose Hill", street_address_2: "PO Box 87508", city: "Houston", state: "Texas", zip_code: "77281", user_type_id: 1
+          username: "ecurneen10", password_hash: "ecurneen10_pass", first_name: "Elisabeth", last_name: "Curneen", email: "ecurneen10@bloglovin.com", street_address: "7854 Moose Hill", street_address_2: "PO Box 87508", city: "Houston", state: "Texas", zip_code: "77281", user_type_id: 1
         },
         {
-          username: "kfawthrop11", first_name: "Kipper", last_name: "Fawthrop", email: "kfawthrop11@paypal.com", street_address: "68 Lake View Drive", street_address_2: "17th Floor", city: "Tucson", state: "Arizona", zip_code: "85705", user_type_id: 2
+          username: "kfawthrop11", password_hash: "kfawthrop11_pass", first_name: "Kipper", last_name: "Fawthrop", email: "kfawthrop11@paypal.com", street_address: "68 Lake View Drive", street_address_2: "17th Floor", city: "Tucson", state: "Arizona", zip_code: "85705", user_type_id: 2
         },
         {
-          username: "egrabbam12", first_name: "Eryn", last_name: "Grabbam", email: "egrabbam12@flickr.com", street_address: "97622 Tomscot Hill", street_address_2: "3rd Floor", city: "Omaha", state: "Nebraska", zip_code: "68134", user_type_id: 2
+          username: "egrabbam12", password_hash: "egrabbam12_pass", first_name: "Eryn", last_name: "Grabbam", email: "egrabbam12@flickr.com", street_address: "97622 Tomscot Hill", street_address_2: "3rd Floor", city: "Omaha", state: "Nebraska", zip_code: "68134", user_type_id: 2
         },
         {
-          username: "hpyvis13", first_name: "Herschel", last_name: "Pyvis", email: "hpyvis13@sitemeter.com", street_address: "57 Iowa Terrace", street_address_2: "Apt 1954", city: "Brooklyn", state: "New York", zip_code: "11205", user_type_id: 2
+          username: "hpyvis13", password_hash: "hpyvis13_pass", first_name: "Herschel", last_name: "Pyvis", email: "hpyvis13@sitemeter.com", street_address: "57 Iowa Terrace", street_address_2: "Apt 1954", city: "Brooklyn", state: "New York", zip_code: "11205", user_type_id: 2
         },
         {
-          username: "nnoice14", first_name: "Neill", last_name: "Noice", email: "nnoice14@wisc.edu", street_address: "567 Mendota Avenue", street_address_2: "PO Box 76524", city: "White Plains", state: "New York", zip_code: "10633", user_type_id: 2
+          username: "nnoice14", password_hash: "nnoice14_pass", first_name: "Neill", last_name: "Noice", email: "nnoice14@wisc.edu", street_address: "567 Mendota Avenue", street_address_2: "PO Box 76524", city: "White Plains", state: "New York", zip_code: "10633", user_type_id: 2
         },
         {
-          username: "sfleetwood15", first_name: "Saunderson", last_name: "Fleetwood", email: "sfleetwood15@home.pl", street_address: "377 Claremont Lane", street_address_2: "Suite 36", city: "Fort Worth", state: "Texas", zip_code: "76134", user_type_id: 2
+          username: "sfleetwood15", password_hash: "sfleetwood15_pass", first_name: "Saunderson", last_name: "Fleetwood", email: "sfleetwood15@home.pl", street_address: "377 Claremont Lane", street_address_2: "Suite 36", city: "Fort Worth", state: "Texas", zip_code: "76134", user_type_id: 2
         },
         {
-          username: "enoah16", first_name: "Edwin", last_name: "Noah", email: "enoah16@omniture.com", street_address: "46970 Myrtle Road", street_address_2: "12th Floor", city: "Daytona Beach", state: "Florida", zip_code: "32128", user_type_id: 1
+          username: "enoah16", password_hash: "enoah16_pass", first_name: "Edwin", last_name: "Noah", email: "enoah16@omniture.com", street_address: "46970 Myrtle Road", street_address_2: "12th Floor", city: "Daytona Beach", state: "Florida", zip_code: "32128", user_type_id: 1
         },
         {
-          username: "mmacdunleavy17", first_name: "Marillin", last_name: "MacDunleavy", email: "mmacdunleavy17@furl.net", street_address: "1163 Lakewood Circle", street_address_2: "Apt 34", city: "New York City", state: "New York", zip_code: "10115", user_type_id: 1
+          username: "mmacdunleavy17", password_hash: "mmacdunleavy17_pass", first_name: "Marillin", last_name: "MacDunleavy", email: "mmacdunleavy17@furl.net", street_address: "1163 Lakewood Circle", street_address_2: "Apt 34", city: "New York City", state: "New York", zip_code: "10115", user_type_id: 1
         },
         {
-          username: "pturone18", first_name: "Priscilla", last_name: "Turone", email: "pturone18@si.edu", street_address: "9 Jackson Alley", street_address_2: "Room 150", city: "Jefferson City", state: "Missouri", zip_code: "65105", user_type_id: 1
+          username: "pturone18", password_hash: "pturone18_pass", first_name: "Priscilla", last_name: "Turone", email: "pturone18@si.edu", street_address: "9 Jackson Alley", street_address_2: "Room 150", city: "Jefferson City", state: "Missouri", zip_code: "65105", user_type_id: 1
         },
         {
-          username: "dmillwall19", first_name: "Dona", last_name: "Millwall", email: "dmillwall19@goodreads.com", street_address: "6879 Sommers Parkway", street_address_2: "12th Floor", city: "El Paso", state: "Texas", zip_code: "79923", user_type_id: 1
+          username: "dmillwall19", password_hash: "dmillwall19_pass", first_name: "Dona", last_name: "Millwall", email: "dmillwall19@goodreads.com", street_address: "6879 Sommers Parkway", street_address_2: "12th Floor", city: "El Paso", state: "Texas", zip_code: "79923", user_type_id: 1
         },
         {
-          username: "marlt1a", first_name: "Meggy", last_name: "Arlt", email: "marlt1a@cyberchimps.com", street_address: "85520 Calypso Avenue", street_address_2: "Apt 1983", city: "Atlanta", state: "Georgia", zip_code: "30343", user_type_id: 1
+          username: "marlt1a", password_hash: "marlt1a_pass", first_name: "Meggy", last_name: "Arlt", email: "marlt1a@cyberchimps.com", street_address: "85520 Calypso Avenue", street_address_2: "Apt 1983", city: "Atlanta", state: "Georgia", zip_code: "30343", user_type_id: 1
         },
         {
-          username: "mmulligan1b", first_name: "Mercy", last_name: "Mulligan", email: "mmulligan1b@amazon.com", street_address: "84114 Loftsgordon Lane", street_address_2: "Suite 86", city: "Washington", state: "District of Columbia", zip_code: "20073", user_type_id: 2
+          username: "mmulligan1b", password_hash: "mmulligan1b_pass", first_name: "Mercy", last_name: "Mulligan", email: "mmulligan1b@amazon.com", street_address: "84114 Loftsgordon Lane", street_address_2: "Suite 86", city: "Washington", state: "District of Columbia", zip_code: "20073", user_type_id: 2
         },
         {
-          username: "lwhistan1c", first_name: "Libbey", last_name: "Whistan", email: "lwhistan1c@moonfruit.com", street_address: "3323 Bultman Lane", street_address_2: "Suite 20", city: "Knoxville", state: "Tennessee", zip_code: "37919", user_type_id: 2
+          username: "lwhistan1c", password_hash: "lwhistan1c_pass", first_name: "Libbey", last_name: "Whistan", email: "lwhistan1c@moonfruit.com", street_address: "3323 Bultman Lane", street_address_2: "Suite 20", city: "Knoxville", state: "Tennessee", zip_code: "37919", user_type_id: 2
         },
         {
-          username: "dleverett1d", first_name: "Dulciana", last_name: "Leverett", email: "dleverett1d@jugem.jp", street_address: "813 Cottonwood Circle", street_address_2: "Room 1329", city: "Carson City", state: "Nevada", zip_code: "89714", user_type_id: 2
+          username: "dleverett1d", password_hash: "dleverett1d_pass", first_name: "Dulciana", last_name: "Leverett", email: "dleverett1d@jugem.jp", street_address: "813 Cottonwood Circle", street_address_2: "Room 1329", city: "Carson City", state: "Nevada", zip_code: "89714", user_type_id: 2
         },
         {
-          username: "cquartermain1e", first_name: "Cull", last_name: "Quartermain", email: "cquartermain1e@posterous.com", street_address: "8657 Stuart Way", street_address_2: "16th Floor", city: "Saint Louis", state: "Missouri", zip_code: "63136", user_type_id: 1
+          username: "cquartermain1e", password_hash: "cquartermain1e_pass", first_name: "Cull", last_name: "Quartermain", email: "cquartermain1e@posterous.com", street_address: "8657 Stuart Way", street_address_2: "16th Floor", city: "Saint Louis", state: "Missouri", zip_code: "63136", user_type_id: 1
         },
         {
-          username: "gmathias1f", first_name: "Garwood", last_name: "Mathias", email: "gmathias1f@csmonitor.com", street_address: "0 Badeau Alley", street_address_2: "Apt 59", city: "Augusta", state: "Georgia", zip_code: "30905", user_type_id: 1
+          username: "gmathias1f", password_hash: "gmathias1f_pass", first_name: "Garwood", last_name: "Mathias", email: "gmathias1f@csmonitor.com", street_address: "0 Badeau Alley", street_address_2: "Apt 59", city: "Augusta", state: "Georgia", zip_code: "30905", user_type_id: 1
         },
         {
-          username: "aratnege1g", first_name: "Alanson", last_name: "Ratnege", email: "aratnege1g@uiuc.edu", street_address: "5 Fordem Drive", street_address_2: "Apt 1841", city: "Miami", state: "Florida", zip_code: "33111", user_type_id: 2
+          username: "aratnege1g", password_hash: "aratnege1g_pass", first_name: "Alanson", last_name: "Ratnege", email: "aratnege1g@uiuc.edu", street_address: "5 Fordem Drive", street_address_2: "Apt 1841", city: "Miami", state: "Florida", zip_code: "33111", user_type_id: 2
         },
         {
-          username: "nbelvin1h", first_name: "Neile", last_name: "Belvin", email: "nbelvin1h@free.fr", street_address: "7210 Lighthouse Bay Place", street_address_2: "PO Box 47381", city: "Pensacola", state: "Florida", zip_code: "32595", user_type_id: 1
+          username: "nbelvin1h", password_hash: "nbelvin1h_pass", first_name: "Neile", last_name: "Belvin", email: "nbelvin1h@free.fr", street_address: "7210 Lighthouse Bay Place", street_address_2: "PO Box 47381", city: "Pensacola", state: "Florida", zip_code: "32595", user_type_id: 1
         },
         {
-          username: "nmagnar1i", first_name: "Nefen", last_name: "Magnar", email: "nmagnar1i@cyberchimps.com", street_address: "589 6th Circle", street_address_2: "Suite 89", city: "El Paso", state: "Texas", zip_code: "88589", user_type_id: 1
+          username: "nmagnar1i", password_hash: "nmagnar1i_pass", first_name: "Nefen", last_name: "Magnar", email: "nmagnar1i@cyberchimps.com", street_address: "589 6th Circle", street_address_2: "Suite 89", city: "El Paso", state: "Texas", zip_code: "88589", user_type_id: 1
         },
         {
-          username: "ecunnah1j", first_name: "Eduard", last_name: "Cunnah", email: "ecunnah1j@nytimes.com", street_address: "22 Vidon Place", street_address_2: "Suite 36", city: "San Jose", state: "California", zip_code: "95108", user_type_id: 2
+          username: "ecunnah1j", password_hash: "ecunnah1j_pass", first_name: "Eduard", last_name: "Cunnah", email: "ecunnah1j@nytimes.com", street_address: "22 Vidon Place", street_address_2: "Suite 36", city: "San Jose", state: "California", zip_code: "95108", user_type_id: 2
         },
         {
-          username: "kormrod1k", first_name: "Kassi", last_name: "Ormrod", email: "kormrod1k@ed.gov", street_address: "696 Dottie Alley", street_address_2: "Room 1582", city: "Fort Pierce", state: "Florida", zip_code: "34949", user_type_id: 1
+          username: "kormrod1k", password_hash: "kormrod1k_pass", first_name: "Kassi", last_name: "Ormrod", email: "kormrod1k@ed.gov", street_address: "696 Dottie Alley", street_address_2: "Room 1582", city: "Fort Pierce", state: "Florida", zip_code: "34949", user_type_id: 1
         },
         {
-          username: "stemblett1l", first_name: "Saundra", last_name: "Temblett", email: "stemblett1l@booking.com", street_address: "3349 Golf Course Hill", street_address_2: "10th Floor", city: "Chula Vista", state: "California", zip_code: "91913", user_type_id: 2
+          username: "stemblett1l", password_hash: "stemblett1l_pass", first_name: "Saundra", last_name: "Temblett", email: "stemblett1l@booking.com", street_address: "3349 Golf Course Hill", street_address_2: "10th Floor", city: "Chula Vista", state: "California", zip_code: "91913", user_type_id: 2
         },
         {
-          username: "hdeblasi1m", first_name: "Herb", last_name: "De Blasi", email: "hdeblasi1m@freewebs.com", street_address: "97 Cordelia Junction", street_address_2: "PO Box 47169", city: "Dayton", state: "Ohio", zip_code: "45490", user_type_id: 1
+          username: "hdeblasi1m", password_hash: "hdeblasi1m_pass", first_name: "Herb", last_name: "De Blasi", email: "hdeblasi1m@freewebs.com", street_address: "97 Cordelia Junction", street_address_2: "PO Box 47169", city: "Dayton", state: "Ohio", zip_code: "45490", user_type_id: 1
         },
         {
-          username: "nmacfall1n", first_name: "Neils", last_name: "MacFall", email: "nmacfall1n@netvibes.com", street_address: "3 Thierer Circle", street_address_2: "Apt 493", city: "Memphis", state: "Tennessee", zip_code: "38143", user_type_id: 2
+          username: "nmacfall1n", password_hash: "nmacfall1n_pass", first_name: "Neils", last_name: "MacFall", email: "nmacfall1n@netvibes.com", street_address: "3 Thierer Circle", street_address_2: "Apt 493", city: "Memphis", state: "Tennessee", zip_code: "38143", user_type_id: 2
         },
         {
-          username: "dpolamontayne1o", first_name: "Delores", last_name: "Polamontayne", email: "dpolamontayne1o@stanford.edu", street_address: "28231 Delladonna Pass", street_address_2: "Suite 16", city: "Albany", state: "New York", zip_code: "12237", user_type_id: 2
+          username: "dpolamontayne1o", password_hash: "dpolamontayne1o_pass", first_name: "Delores", last_name: "Polamontayne", email: "dpolamontayne1o@stanford.edu", street_address: "28231 Delladonna Pass", street_address_2: "Suite 16", city: "Albany", state: "New York", zip_code: "12237", user_type_id: 2
         },
         {
-          username: "ngloucester1p", first_name: "Nananne", last_name: "Gloucester", email: "ngloucester1p@meetup.com", street_address: "13 Transport Trail", street_address_2: "PO Box 66593", city: "Boise", state: "Idaho", zip_code: "83722", user_type_id: 2
+          username: "ngloucester1p", password_hash: "ngloucester1p_pass", first_name: "Nananne", last_name: "Gloucester", email: "ngloucester1p@meetup.com", street_address: "13 Transport Trail", street_address_2: "PO Box 66593", city: "Boise", state: "Idaho", zip_code: "83722", user_type_id: 2
         },
         {
-          username: "acoller1q", first_name: "Anabelle", last_name: "Coller", email: "acoller1q@bandcamp.com", street_address: "17 Coleman Place", street_address_2: "Suite 34", city: "Philadelphia", state: "Pennsylvania", zip_code: "19151", user_type_id: 2
+          username: "acoller1q", password_hash: "acoller1q_pass", first_name: "Anabelle", last_name: "Coller", email: "acoller1q@bandcamp.com", street_address: "17 Coleman Place", street_address_2: "Suite 34", city: "Philadelphia", state: "Pennsylvania", zip_code: "19151", user_type_id: 2
         },
         {
-          username: "wmushrow1r", first_name: "Winslow", last_name: "Mushrow", email: "wmushrow1r@biblegateway.com", street_address: "21 Daystar Court", street_address_2: "Room 352", city: "Oklahoma City", state: "Oklahoma", zip_code: "73157", user_type_id: 1
+          username: "wmushrow1r", password_hash: "wmushrow1r_pass", first_name: "Winslow", last_name: "Mushrow", email: "wmushrow1r@biblegateway.com", street_address: "21 Daystar Court", street_address_2: "Room 352", city: "Oklahoma City", state: "Oklahoma", zip_code: "73157", user_type_id: 1
         },
         {
-          username: "jcello1s", first_name: "Jacquelin", last_name: "Cello", email: "jcello1s@cbslocal.com", street_address: "613 Autumn Leaf Alley", street_address_2: "Room 836", city: "Madison", state: "Wisconsin", zip_code: "53785", user_type_id: 2
+          username: "jcello1s", password_hash: "jcello1s_pass", first_name: "Jacquelin", last_name: "Cello", email: "jcello1s@cbslocal.com", street_address: "613 Autumn Leaf Alley", street_address_2: "Room 836", city: "Madison", state: "Wisconsin", zip_code: "53785", user_type_id: 2
         },
         {
-          username: "tclelland1t", first_name: "Thane", last_name: "Clelland", email: "tclelland1t@utexas.edu", street_address: "1653 Continental Junction", street_address_2: "Room 947", city: "Salt Lake City", state: "Utah", zip_code: "84145", user_type_id: 1
+          username: "tclelland1t", password_hash: "tclelland1t_pass", first_name: "Thane", last_name: "Clelland", email: "tclelland1t@utexas.edu", street_address: "1653 Continental Junction", street_address_2: "Room 947", city: "Salt Lake City", state: "Utah", zip_code: "84145", user_type_id: 1
         },
         {
-          username: "soverland1u", first_name: "Suzie", last_name: "Overland", email: "soverland1u@macromedia.com", street_address: "6732 Londonderry Pass", street_address_2: "PO Box 83059", city: "Young America", state: "Minnesota", zip_code: "55557", user_type_id: 2
+          username: "soverland1u", password_hash: "soverland1u_pass", first_name: "Suzie", last_name: "Overland", email: "soverland1u@macromedia.com", street_address: "6732 Londonderry Pass", street_address_2: "PO Box 83059", city: "Young America", state: "Minnesota", zip_code: "55557", user_type_id: 2
         },
         {
-          username: "fodooghaine1v", first_name: "Francesco", last_name: "O'Dooghaine", email: "fodooghaine1v@hexun.com", street_address: "29 Morrow Way", street_address_2: "18th Floor", city: "Washington", state: "District of Columbia", zip_code: "20557", user_type_id: 2
+          username: "fodooghaine1v", password_hash: "fodooghaine1v_pass", first_name: "Francesco", last_name: "O'Dooghaine", email: "fodooghaine1v@hexun.com", street_address: "29 Morrow Way", street_address_2: "18th Floor", city: "Washington", state: "District of Columbia", zip_code: "20557", user_type_id: 2
         },
         {
-          username: "reckly1w", first_name: "Rhona", last_name: "Eckly", email: "reckly1w@smh.com.au", street_address: "10736 Talmadge Crossing", street_address_2: "PO Box 13638", city: "Albuquerque", state: "New Mexico", zip_code: "87121", user_type_id: 2
+          username: "reckly1w", password_hash: "reckly1w_pass", first_name: "Rhona", last_name: "Eckly", email: "reckly1w@smh.com.au", street_address: "10736 Talmadge Crossing", street_address_2: "PO Box 13638", city: "Albuquerque", state: "New Mexico", zip_code: "87121", user_type_id: 2
         },
         {
-          username: "msawyers1x", first_name: "Mar", last_name: "Sawyers", email: "msawyers1x@vimeo.com", street_address: "87 Mitchell Hill", street_address_2: "PO Box 46817", city: "Pensacola", state: "Florida", zip_code: "32595", user_type_id: 1
+          username: "msawyers1x", password_hash: "msawyers1x_pass", first_name: "Mar", last_name: "Sawyers", email: "msawyers1x@vimeo.com", street_address: "87 Mitchell Hill", street_address_2: "PO Box 46817", city: "Pensacola", state: "Florida", zip_code: "32595", user_type_id: 1
         },
         {
-          username: "larmes1y", first_name: "Leupold", last_name: "Armes", email: "larmes1y@seesaa.net", street_address: "874 Muir Alley", street_address_2: "12th Floor", city: "West Palm Beach", state: "Florida", zip_code: "33421", user_type_id: 1
+          username: "larmes1y", password_hash: "larmes1y_pass", first_name: "Leupold", last_name: "Armes", email: "larmes1y@seesaa.net", street_address: "874 Muir Alley", street_address_2: "12th Floor", city: "West Palm Beach", state: "Florida", zip_code: "33421", user_type_id: 1
         },
         {
-          username: "oslayford1z", first_name: "Olly", last_name: "Slayford", email: "oslayford1z@latimes.com", street_address: "51 Browning Place", street_address_2: "Apt 1431", city: "Madison", state: "Wisconsin", zip_code: "53705", user_type_id: 2
+          username: "oslayford1z", password_hash: "oslayford1z_pass", first_name: "Olly", last_name: "Slayford", email: "oslayford1z@latimes.com", street_address: "51 Browning Place", street_address_2: "Apt 1431", city: "Madison", state: "Wisconsin", zip_code: "53705", user_type_id: 2
         },
         {
-          username: "vpembery20", first_name: "Vernor", last_name: "Pembery", email: "vpembery20@google.es", street_address: "9758 Hauk Drive", street_address_2: "PO Box 83826", city: "North Hollywood", state: "California", zip_code: "91606", user_type_id: 2
+          username: "vpembery20", password_hash: "vpembery20_pass", first_name: "Vernor", last_name: "Pembery", email: "vpembery20@google.es", street_address: "9758 Hauk Drive", street_address_2: "PO Box 83826", city: "North Hollywood", state: "California", zip_code: "91606", user_type_id: 2
         },
         {
-          username: "jkarlicek21", first_name: "Jennifer", last_name: "Karlicek", email: "jkarlicek21@dell.com", street_address: "79969 Pankratz Lane", street_address_2: "Apt 844", city: "Norwalk", state: "Connecticut", zip_code: "06859", user_type_id: 2
+          username: "jkarlicek21", password_hash: "jkarlicek21_pass", first_name: "Jennifer", last_name: "Karlicek", email: "jkarlicek21@dell.com", street_address: "79969 Pankratz Lane", street_address_2: "Apt 844", city: "Norwalk", state: "Connecticut", zip_code: "06859", user_type_id: 2
         },
         {
-          username: "cwoodsford22", first_name: "Calli", last_name: "Woodsford", email: "cwoodsford22@smugmug.com", street_address: "71 Crescent Oaks Circle", street_address_2: "Suite 56", city: "Los Angeles", state: "California", zip_code: "90076", user_type_id: 1
+          username: "cwoodsford22", password_hash: "cwoodsford22_pass", first_name: "Calli", last_name: "Woodsford", email: "cwoodsford22@smugmug.com", street_address: "71 Crescent Oaks Circle", street_address_2: "Suite 56", city: "Los Angeles", state: "California", zip_code: "90076", user_type_id: 1
         },
         {
-          username: "geberlein23", first_name: "Guinevere", last_name: "Eberlein", email: "geberlein23@google.ru", street_address: "3635 Barby Lane", street_address_2: "Apt 597", city: "Houston", state: "Texas", zip_code: "77075", user_type_id: 2
+          username: "geberlein23", password_hash: "geberlein23_pass", first_name: "Guinevere", last_name: "Eberlein", email: "geberlein23@google.ru", street_address: "3635 Barby Lane", street_address_2: "Apt 597", city: "Houston", state: "Texas", zip_code: "77075", user_type_id: 2
         },
         {
-          username: "cjustham24", first_name: "Corry", last_name: "Justham", email: "cjustham24@freewebs.com", street_address: "76 Duke Pass", street_address_2: "Suite 37", city: "Palo Alto", state: "California", zip_code: "94302", user_type_id: 1
+          username: "cjustham24", password_hash: "cjustham24_pass", first_name: "Corry", last_name: "Justham", email: "cjustham24@freewebs.com", street_address: "76 Duke Pass", street_address_2: "Suite 37", city: "Palo Alto", state: "California", zip_code: "94302", user_type_id: 1
         },
         {
-          username: "ahickeringill25", first_name: "Ann-marie", last_name: "Hickeringill", email: "ahickeringill25@arizona.edu", street_address: "148 Milwaukee Trail", street_address_2: "Apt 764", city: "Denver", state: "Colorado", zip_code: "80262", user_type_id: 1
+          username: "ahickeringill25", password_hash: "ahickeringill25_pass", first_name: "Ann-marie", last_name: "Hickeringill", email: "ahickeringill25@arizona.edu", street_address: "148 Milwaukee Trail", street_address_2: "Apt 764", city: "Denver", state: "Colorado", zip_code: "80262", user_type_id: 1
         },
         {
-          username: "ilockyear26", first_name: "Irving", last_name: "Lockyear", email: "ilockyear26@instagram.com", street_address: "639 Boyd Crossing", street_address_2: "Room 1629", city: "Wichita", state: "Kansas", zip_code: "67230", user_type_id: 1
+          username: "ilockyear26", password_hash: "ilockyear26_pass", first_name: "Irving", last_name: "Lockyear", email: "ilockyear26@instagram.com", street_address: "639 Boyd Crossing", street_address_2: "Room 1629", city: "Wichita", state: "Kansas", zip_code: "67230", user_type_id: 1
         },
         {
-          username: "mkiraly27", first_name: "Muffin", last_name: "Kiraly", email: "mkiraly27@wikipedia.org", street_address: "20 Westridge Hill", street_address_2: "Room 838", city: "Oxnard", state: "California", zip_code: "93034", user_type_id: 1
+          username: "mkiraly27", password_hash: "mkiraly27_pass", first_name: "Muffin", last_name: "Kiraly", email: "mkiraly27@wikipedia.org", street_address: "20 Westridge Hill", street_address_2: "Room 838", city: "Oxnard", state: "California", zip_code: "93034", user_type_id: 1
         },
         {
-          username: "hwanklin28", first_name: "Hermione", last_name: "Wanklin", email: "hwanklin28@mozilla.org", street_address: "1 Hermina Parkway", street_address_2: "4th Floor", city: "Milwaukee", state: "Wisconsin", zip_code: "53277", user_type_id: 2
+          username: "hwanklin28", password_hash: "hwanklin28_pass", first_name: "Hermione", last_name: "Wanklin", email: "hwanklin28@mozilla.org", street_address: "1 Hermina Parkway", street_address_2: "4th Floor", city: "Milwaukee", state: "Wisconsin", zip_code: "53277", user_type_id: 2
         },
         {
-          username: "bportal29", first_name: "Baillie", last_name: "Portal", email: "bportal29@so-net.ne.jp", street_address: "1710 Oak Valley Drive", street_address_2: "Suite 97", city: "New Hyde Park", state: "New York", zip_code: "11044", user_type_id: 2
+          username: "bportal29", password_hash: "bportal29_pass", first_name: "Baillie", last_name: "Portal", email: "bportal29@so-net.ne.jp", street_address: "1710 Oak Valley Drive", street_address_2: "Suite 97", city: "New Hyde Park", state: "New York", zip_code: "11044", user_type_id: 2
         },
         {
-          username: "bmarrison2a", first_name: "Blisse", last_name: "Marrison", email: "bmarrison2a@pbs.org", street_address: "4935 Jana Hill", street_address_2: "Apt 1050", city: "Corona", state: "California", zip_code: "92883", user_type_id: 1
+          username: "bmarrison2a", password_hash: "bmarrison2a_pass", first_name: "Blisse", last_name: "Marrison", email: "bmarrison2a@pbs.org", street_address: "4935 Jana Hill", street_address_2: "Apt 1050", city: "Corona", state: "California", zip_code: "92883", user_type_id: 1
         },
         {
-          username: "mrother2b", first_name: "Myrta", last_name: "Rother", email: "mrother2b@pbs.org", street_address: "267 Jana Pass", street_address_2: "Room 141", city: "Evansville", state: "Indiana", zip_code: "47747", user_type_id: 2
+          username: "mrother2b", password_hash: "mrother2b_pass", first_name: "Myrta", last_name: "Rother", email: "mrother2b@pbs.org", street_address: "267 Jana Pass", street_address_2: "Room 141", city: "Evansville", state: "Indiana", zip_code: "47747", user_type_id: 2
         },
         {
-          username: "rporch2c", first_name: "Rufe", last_name: "Porch", email: "rporch2c@liveinternet.ru", street_address: "122 Elka Hill", street_address_2: "Room 1041", city: "Seattle", state: "Washington", zip_code: "98109", user_type_id: 1
+          username: "rporch2c", password_hash: "rporch2c_pass", first_name: "Rufe", last_name: "Porch", email: "rporch2c@liveinternet.ru", street_address: "122 Elka Hill", street_address_2: "Room 1041", city: "Seattle", state: "Washington", zip_code: "98109", user_type_id: 1
         },
         {
-          username: "slandsberg2d", first_name: "Shelagh", last_name: "Landsberg", email: "slandsberg2d@dagondesign.com", street_address: "4 Melvin Park", street_address_2: "Apt 123", city: "Boston", state: "Massachusetts", zip_code: "02283", user_type_id: 1
+          username: "slandsberg2d", password_hash: "slandsberg2d_pass", first_name: "Shelagh", last_name: "Landsberg", email: "slandsberg2d@dagondesign.com", street_address: "4 Melvin Park", street_address_2: "Apt 123", city: "Boston", state: "Massachusetts", zip_code: "02283", user_type_id: 1
         },
         {
-          username: "troof2e", first_name: "Tyrone", last_name: "Roof", email: "troof2e@unc.edu", street_address: "1 Atwood Junction", street_address_2: "Suite 63", city: "El Paso", state: "Texas", zip_code: "79955", user_type_id: 1
+          username: "troof2e", password_hash: "troof2e_pass", first_name: "Tyrone", last_name: "Roof", email: "troof2e@unc.edu", street_address: "1 Atwood Junction", street_address_2: "Suite 63", city: "El Paso", state: "Texas", zip_code: "79955", user_type_id: 1
         },
         {
-          username: "pgladdifh2f", first_name: "Pembroke", last_name: "Gladdifh", email: "pgladdifh2f@alibaba.com", street_address: "585 Brentwood Plaza", street_address_2: "Suite 67", city: "Mc Keesport", state: "Pennsylvania", zip_code: "15134", user_type_id: 2
+          username: "pgladdifh2f", password_hash: "pgladdifh2f_pass", first_name: "Pembroke", last_name: "Gladdifh", email: "pgladdifh2f@alibaba.com", street_address: "585 Brentwood Plaza", street_address_2: "Suite 67", city: "Mc Keesport", state: "Pennsylvania", zip_code: "15134", user_type_id: 2
         },
         {
-          username: "cgreydon2g", first_name: "Constantino", last_name: "Greydon", email: "cgreydon2g@hibu.com", street_address: "60858 Nelson Place", street_address_2: "Suite 29", city: "San Francisco", state: "California", zip_code: "94154", user_type_id: 1
+          username: "cgreydon2g", password_hash: "cgreydon2g_pass", first_name: "Constantino", last_name: "Greydon", email: "cgreydon2g@hibu.com", street_address: "60858 Nelson Place", street_address_2: "Suite 29", city: "San Francisco", state: "California", zip_code: "94154", user_type_id: 1
         },
         {
-          username: "fwrennall2h", first_name: "Fidelia", last_name: "Wrennall", email: "fwrennall2h@virginia.edu", street_address: "2 Doe Crossing Place", street_address_2: "Suite 17", city: "Salt Lake City", state: "Utah", zip_code: "84130", user_type_id: 2
+          username: "fwrennall2h", password_hash: "fwrennall2h_pass", first_name: "Fidelia", last_name: "Wrennall", email: "fwrennall2h@virginia.edu", street_address: "2 Doe Crossing Place", street_address_2: "Suite 17", city: "Salt Lake City", state: "Utah", zip_code: "84130", user_type_id: 2
         },
         {
-          username: "mgarriock2i", first_name: "Meir", last_name: "Garriock", email: "mgarriock2i@wufoo.com", street_address: "0 Packers Alley", street_address_2: "Suite 26", city: "Kansas City", state: "Missouri", zip_code: "64149", user_type_id: 1
+          username: "mgarriock2i", password_hash: "mgarriock2i_pass", first_name: "Meir", last_name: "Garriock", email: "mgarriock2i@wufoo.com", street_address: "0 Packers Alley", street_address_2: "Suite 26", city: "Kansas City", state: "Missouri", zip_code: "64149", user_type_id: 1
         },
         {
-          username: "dcapron2j", first_name: "Dyann", last_name: "Capron", email: "dcapron2j@un.org", street_address: "521 Petterle Drive", street_address_2: "PO Box 12513", city: "Salt Lake City", state: "Utah", zip_code: "84105", user_type_id: 2
+          username: "dcapron2j", password_hash: "dcapron2j_pass", first_name: "Dyann", last_name: "Capron", email: "dcapron2j@un.org", street_address: "521 Petterle Drive", street_address_2: "PO Box 12513", city: "Salt Lake City", state: "Utah", zip_code: "84105", user_type_id: 2
         },
         {
-          username: "mmannion2k", first_name: "Modestia", last_name: "Mannion", email: "mmannion2k@tamu.edu", street_address: "9658 Shelley Pass", street_address_2: "7th Floor", city: "Dallas", state: "Texas", zip_code: "75353", user_type_id: 2
+          username: "mmannion2k", password_hash: "mmannion2k_pass", first_name: "Modestia", last_name: "Mannion", email: "mmannion2k@tamu.edu", street_address: "9658 Shelley Pass", street_address_2: "7th Floor", city: "Dallas", state: "Texas", zip_code: "75353", user_type_id: 2
         },
         {
-          username: "ocrossan2l", first_name: "Oliy", last_name: "Crossan", email: "ocrossan2l@rambler.ru", street_address: "8 Steensland Trail", street_address_2: "19th Floor", city: "Wilmington", state: "Delaware", zip_code: "19897", user_type_id: 1
+          username: "ocrossan2l", password_hash: "ocrossan2l_pass", first_name: "Oliy", last_name: "Crossan", email: "ocrossan2l@rambler.ru", street_address: "8 Steensland Trail", street_address_2: "19th Floor", city: "Wilmington", state: "Delaware", zip_code: "19897", user_type_id: 1
         },
         {
-          username: "gsmalridge2m", first_name: "Gerianne", last_name: "Smalridge", email: "gsmalridge2m@flavors.me", street_address: "19230 Sommers Park", street_address_2: "Room 1955", city: "Spartanburg", state: "South Carolina", zip_code: "29319", user_type_id: 2
+          username: "gsmalridge2m", password_hash: "gsmalridge2m_pass", first_name: "Gerianne", last_name: "Smalridge", email: "gsmalridge2m@flavors.me", street_address: "19230 Sommers Park", street_address_2: "Room 1955", city: "Spartanburg", state: "South Carolina", zip_code: "29319", user_type_id: 2
         },
         {
-          username: "loroan2n", first_name: "Lisette", last_name: "O'Roan", email: "loroan2n@sciencedaily.com", street_address: "608 Kropf Park", street_address_2: "Suite 30", city: "El Paso", state: "Texas", zip_code: "88558", user_type_id: 2
+          username: "loroan2n", password_hash: "loroan2n_pass", first_name: "Lisette", last_name: "O'Roan", email: "loroan2n@sciencedaily.com", street_address: "608 Kropf Park", street_address_2: "Suite 30", city: "El Paso", state: "Texas", zip_code: "88558", user_type_id: 2
         },
         {
-          username: "hgibbon2o", first_name: "Hazel", last_name: "Gibbon", email: "hgibbon2o@businessweek.com", street_address: "46 Shelley Crossing", street_address_2: "7th Floor", city: "Erie", state: "Pennsylvania", zip_code: "16565", user_type_id: 2
+          username: "hgibbon2o", password_hash: "hgibbon2o_pass", first_name: "Hazel", last_name: "Gibbon", email: "hgibbon2o@businessweek.com", street_address: "46 Shelley Crossing", street_address_2: "7th Floor", city: "Erie", state: "Pennsylvania", zip_code: "16565", user_type_id: 2
         },
         {
-          username: "mlardner2p", first_name: "Marlin", last_name: "Lardner", email: "mlardner2p@google.de", street_address: "8420 Mitchell Avenue", street_address_2: "Suite 97", city: "El Paso", state: "Texas", zip_code: "88563", user_type_id: 1
+          username: "mlardner2p", password_hash: "mlardner2p_pass", first_name: "Marlin", last_name: "Lardner", email: "mlardner2p@google.de", street_address: "8420 Mitchell Avenue", street_address_2: "Suite 97", city: "El Paso", state: "Texas", zip_code: "88563", user_type_id: 1
         },
         {
-          username: "bsydes2q", first_name: "Blair", last_name: "Sydes", email: "bsydes2q@domainmarket.com", street_address: "2 Mesta Court", street_address_2: "Apt 1180", city: "Birmingham", state: "Alabama", zip_code: "35244", user_type_id: 1
+          username: "bsydes2q", password_hash: "bsydes2q_pass", first_name: "Blair", last_name: "Sydes", email: "bsydes2q@domainmarket.com", street_address: "2 Mesta Court", street_address_2: "Apt 1180", city: "Birmingham", state: "Alabama", zip_code: "35244", user_type_id: 1
         },
         {
-          username: "asallans2r", first_name: "Allan", last_name: "Sallans", email: "asallans2r@newsvine.com", street_address: "0831 Larry Lane", street_address_2: "Apt 1933", city: "Tulsa", state: "Oklahoma", zip_code: "74103", user_type_id: 1
+          username: "asallans2r", password_hash: "asallans2r_pass", first_name: "Allan", last_name: "Sallans", email: "asallans2r@newsvine.com", street_address: "0831 Larry Lane", street_address_2: "Apt 1933", city: "Tulsa", state: "Oklahoma", zip_code: "74103", user_type_id: 1
         },
         {
-          username: "mellaman2s", first_name: "My", last_name: "Ellaman", email: "mellaman2s@google.nl", street_address: "2 Shopko Lane", street_address_2: "PO Box 52112", city: "Springfield", state: "Ohio", zip_code: "45505", user_type_id: 1
+          username: "mellaman2s", password_hash: "mellaman2s_pass", first_name: "My", last_name: "Ellaman", email: "mellaman2s@google.nl", street_address: "2 Shopko Lane", street_address_2: "PO Box 52112", city: "Springfield", state: "Ohio", zip_code: "45505", user_type_id: 1
         },
         {
-          username: "pbradie2t", first_name: "Perrine", last_name: "Bradie", email: "pbradie2t@auda.org.au", street_address: "22 Prairieview Junction", street_address_2: "Suite 53", city: "Dallas", state: "Texas", zip_code: "75246", user_type_id: 1
+          username: "pbradie2t", password_hash: "pbradie2t_pass", first_name: "Perrine", last_name: "Bradie", email: "pbradie2t@auda.org.au", street_address: "22 Prairieview Junction", street_address_2: "Suite 53", city: "Dallas", state: "Texas", zip_code: "75246", user_type_id: 1
         },
         {
-          username: "hfirpo2u", first_name: "Henka", last_name: "Firpo", email: "hfirpo2u@intel.com", street_address: "122 Warbler Park", street_address_2: "Suite 99", city: "Oklahoma City", state: "Oklahoma", zip_code: "73109", user_type_id: 1
+          username: "hfirpo2u", password_hash: "hfirpo2u_pass", first_name: "Henka", last_name: "Firpo", email: "hfirpo2u@intel.com", street_address: "122 Warbler Park", street_address_2: "Suite 99", city: "Oklahoma City", state: "Oklahoma", zip_code: "73109", user_type_id: 1
         },
         {
-          username: "jinwood2v", first_name: "Jessie", last_name: "Inwood", email: "jinwood2v@amazon.com", street_address: "2 Bobwhite Plaza", street_address_2: "Suite 1", city: "Rockford", state: "Illinois", zip_code: "61110", user_type_id: 1
+          username: "jinwood2v", password_hash: "jinwood2v_pass", first_name: "Jessie", last_name: "Inwood", email: "jinwood2v@amazon.com", street_address: "2 Bobwhite Plaza", street_address_2: "Suite 1", city: "Rockford", state: "Illinois", zip_code: "61110", user_type_id: 1
         },
         {
-          username: "mspenceley2w", first_name: "Mireielle", last_name: "Spenceley", email: "mspenceley2w@geocities.jp", street_address: "33493 Armistice Center", street_address_2: "Room 20", city: "Kansas City", state: "Missouri", zip_code: "64125", user_type_id: 1
+          username: "mspenceley2w", password_hash: "mspenceley2w_pass", first_name: "Mireielle", last_name: "Spenceley", email: "mspenceley2w@geocities.jp", street_address: "33493 Armistice Center", street_address_2: "Room 20", city: "Kansas City", state: "Missouri", zip_code: "64125", user_type_id: 1
         },
         {
-          username: "mwille2x", first_name: "Mollee", last_name: "Wille", email: "mwille2x@hubpages.com", street_address: "90 Blackbird Place", street_address_2: "Apt 191", city: "Richmond", state: "Virginia", zip_code: "23225", user_type_id: 2
+          username: "mwille2x", password_hash: "mwille2x_pass", first_name: "Mollee", last_name: "Wille", email: "mwille2x@hubpages.com", street_address: "90 Blackbird Place", street_address_2: "Apt 191", city: "Richmond", state: "Virginia", zip_code: "23225", user_type_id: 2
         },
         {
-          username: "jboscher2y", first_name: "Jeromy", last_name: "Boscher", email: "jboscher2y@sogou.com", street_address: "5742 Shelley Parkway", street_address_2: "6th Floor", city: "Fresno", state: "California", zip_code: "93704", user_type_id: 1
+          username: "jboscher2y", password_hash: "jboscher2y_pass", first_name: "Jeromy", last_name: "Boscher", email: "jboscher2y@sogou.com", street_address: "5742 Shelley Parkway", street_address_2: "6th Floor", city: "Fresno", state: "California", zip_code: "93704", user_type_id: 1
         },
         {
-          username: "hskeldon2z", first_name: "Hilly", last_name: "Skeldon", email: "hskeldon2z@hud.gov", street_address: "351 Heffernan Park", street_address_2: "7th Floor", city: "Rochester", state: "New York", zip_code: "14683", user_type_id: 1
+          username: "hskeldon2z", password_hash: "hskeldon2z_pass", first_name: "Hilly", last_name: "Skeldon", email: "hskeldon2z@hud.gov", street_address: "351 Heffernan Park", street_address_2: "7th Floor", city: "Rochester", state: "New York", zip_code: "14683", user_type_id: 1
         },
         {
-          username: "cjozwicki30", first_name: "Cathy", last_name: "Jozwicki", email: "cjozwicki30@sfgate.com", street_address: "84 Prentice Circle", street_address_2: "9th Floor", city: "London", state: "Kentucky", zip_code: "40745", user_type_id: 2
+          username: "cjozwicki30", password_hash: "cjozwicki30_pass", first_name: "Cathy", last_name: "Jozwicki", email: "cjozwicki30@sfgate.com", street_address: "84 Prentice Circle", street_address_2: "9th Floor", city: "London", state: "Kentucky", zip_code: "40745", user_type_id: 2
         },
         {
-          username: "kmurcutt31", first_name: "Kim", last_name: "Murcutt", email: "kmurcutt31@utexas.edu", street_address: "5 Erie Way", street_address_2: "17th Floor", city: "Cleveland", state: "Ohio", zip_code: "44125", user_type_id: 1
+          username: "kmurcutt31", password_hash: "kmurcutt31_pass", first_name: "Kim", last_name: "Murcutt", email: "kmurcutt31@utexas.edu", street_address: "5 Erie Way", street_address_2: "17th Floor", city: "Cleveland", state: "Ohio", zip_code: "44125", user_type_id: 1
         },
         {
-          username: "lklimkovich32", first_name: "Leanora", last_name: "Klimkovich", email: "lklimkovich32@hugedomains.com", street_address: "79 Mesta Avenue", street_address_2: "Apt 1181", city: "Baltimore", state: "Maryland", zip_code: "21239", user_type_id: 1
+          username: "lklimkovich32", password_hash: "lklimkovich32_pass", first_name: "Leanora", last_name: "Klimkovich", email: "lklimkovich32@hugedomains.com", street_address: "79 Mesta Avenue", street_address_2: "Apt 1181", city: "Baltimore", state: "Maryland", zip_code: "21239", user_type_id: 1
         },
         {
-          username: "clumsdale33", first_name: "Constance", last_name: "Lumsdale", email: "clumsdale33@themeforest.net", street_address: "7800 Brown Way", street_address_2: "Apt 638", city: "Chicago", state: "Illinois", zip_code: "60614", user_type_id: 2
+          username: "clumsdale33", password_hash: "clumsdale33_pass", first_name: "Constance", last_name: "Lumsdale", email: "clumsdale33@themeforest.net", street_address: "7800 Brown Way", street_address_2: "Apt 638", city: "Chicago", state: "Illinois", zip_code: "60614", user_type_id: 2
         },
         {
-          username: "pburnup34", first_name: "Prudence", last_name: "Burnup", email: "pburnup34@geocities.jp", street_address: "76 Autumn Leaf Parkway", street_address_2: "Suite 99", city: "Youngstown", state: "Ohio", zip_code: "44511", user_type_id: 1
+          username: "pburnup34", password_hash: "pburnup34_pass", first_name: "Prudence", last_name: "Burnup", email: "pburnup34@geocities.jp", street_address: "76 Autumn Leaf Parkway", street_address_2: "Suite 99", city: "Youngstown", state: "Ohio", zip_code: "44511", user_type_id: 1
         },
         {
-          username: "hjest35", first_name: "Hube", last_name: "Jest", email: "hjest35@unc.edu", street_address: "1 Roxbury Alley", street_address_2: "8th Floor", city: "Atlanta", state: "Georgia", zip_code: "30343", user_type_id
+          username: "hjest35", password_hash: "hjest35_pass", first_name: "Hube", last_name: "Jest", email: "hjest35@unc.edu", street_address: "1 Roxbury Alley", street_address_2: "8th Floor", city: "Atlanta", state: "Georgia", zip_code: "30343", user_type_id
             : 1
         },
         {
-          username: "fyarrington36", first_name: "Fanni", last_name: "Yarrington", email: "fyarrington36@cnn.com", street_address: "966 Mcguire Pass", street_address_2: "Suite 92", city: "Aurora", state: "Illinois", zip_code: "60505", user_type_id: 1
+          username: "fyarrington36", password_hash: "fyarrington36_pass", first_name: "Fanni", last_name: "Yarrington", email: "fyarrington36@cnn.com", street_address: "966 Mcguire Pass", street_address_2: "Suite 92", city: "Aurora", state: "Illinois", zip_code: "60505", user_type_id: 1
         },
         {
-          username: "elamball37", first_name: "Eb", last_name: "Lamball", email: "elamball37@netvibes.com", street_address: "07 Farragut Circle", street_address_2: "Apt 198", city: "Oakland", state: "California", zip_code: "94660", user_type_id: 1
+          username: "elamball37", password_hash: "elamball37_pass", first_name: "Eb", last_name: "Lamball", email: "elamball37@netvibes.com", street_address: "07 Farragut Circle", street_address_2: "Apt 198", city: "Oakland", state: "California", zip_code: "94660", user_type_id: 1
         },
         {
-          username: "ynewvell38", first_name: "Yetty", last_name: "Newvell", email: "ynewvell38@themeforest.net", street_address: "6 Arkansas Lane", street_address_2: "PO Box 625", city: "Delray Beach", state: "Florida", zip_code: "33448", user_type_id: 1
+          username: "ynewvell38", password_hash: "ynewvell38_pass", first_name: "Yetty", last_name: "Newvell", email: "ynewvell38@themeforest.net", street_address: "6 Arkansas Lane", street_address_2: "PO Box 625", city: "Delray Beach", state: "Florida", zip_code: "33448", user_type_id: 1
         },
         {
-          username: "tcrutchfield39", first_name: "Toby", last_name: "Crutchfield", email: "tcrutchfield39@europa.eu", street_address: "34 Transport Parkway", street_address_2: "Apt 776", city: "Lexington", state: "Kentucky", zip_code: "40510", user_type_id: 2
+          username: "tcrutchfield39", password_hash: "tcrutchfield39_pass", first_name: "Toby", last_name: "Crutchfield", email: "tcrutchfield39@europa.eu", street_address: "34 Transport Parkway", street_address_2: "Apt 776", city: "Lexington", state: "Kentucky", zip_code: "40510", user_type_id: 2
         },
         {
-          username: "daery3a", first_name: "Deeyn", last_name: "Aery", email: "daery3a@mit.edu", street_address: "826 Sutteridge Place", street_address_2: "Room 714", city: "Littleton", state: "Colorado", zip_code: "80126", user_type_id: 1
+          username: "daery3a", password_hash: "daery3a_pass", first_name: "Deeyn", last_name: "Aery", email: "daery3a@mit.edu", street_address: "826 Sutteridge Place", street_address_2: "Room 714", city: "Littleton", state: "Colorado", zip_code: "80126", user_type_id: 1
         },
         {
-          username: "mknottley3b", first_name: "Merrili", last_name: "Knottley", email: "mknottley3b@taobao.com", street_address: "211 Shasta Alley", street_address_2: "PO Box 27852", city: "Atlanta", state: "Georgia", zip_code: "30392", user_type_id: 2
+          username: "mknottley3b", password_hash: "mknottley3b_pass", first_name: "Merrili", last_name: "Knottley", email: "mknottley3b@taobao.com", street_address: "211 Shasta Alley", street_address_2: "PO Box 27852", city: "Atlanta", state: "Georgia", zip_code: "30392", user_type_id: 2
         },
         {
-          username: "mfarherty3c", first_name: "Meg", last_name: "Farherty", email: "mfarherty3c@cnet.com", street_address: "9 Mcbride Drive", street_address_2: "Room 608", city: "New Orleans", state: "Louisiana", zip_code: "70160", user_type_id: 1
+          username: "mfarherty3c", password_hash: "mfarherty3c_pass", first_name: "Meg", last_name: "Farherty", email: "mfarherty3c@cnet.com", street_address: "9 Mcbride Drive", street_address_2: "Room 608", city: "New Orleans", state: "Louisiana", zip_code: "70160", user_type_id: 1
         },
         {
-          username: "scobbald3d", first_name: "Scotti", last_name: "Cobbald", email: "scobbald3d@bizjournals.com", street_address: "554 Michigan Place", street_address_2: "17th Floor", city: "Seattle", state: "Washington", zip_code: "98166", user_type_id: 2
+          username: "scobbald3d", password_hash: "scobbald3d_pass", first_name: "Scotti", last_name: "Cobbald", email: "scobbald3d@bizjournals.com", street_address: "554 Michigan Place", street_address_2: "17th Floor", city: "Seattle", state: "Washington", zip_code: "98166", user_type_id: 2
         },
         {
-          username: "rhauxby3e", first_name: "Rufe", last_name: "Hauxby", email: "rhauxby3e@dyndns.org", street_address: "98194 American Ash Crossing", street_address_2: "Suite 10", city: "Des Moines", state: "Iowa", zip_code: "50315", user_type_id: 2
+          username: "rhauxby3e", password_hash: "rhauxby3e_pass", first_name: "Rufe", last_name: "Hauxby", email: "rhauxby3e@dyndns.org", street_address: "98194 American Ash Crossing", street_address_2: "Suite 10", city: "Des Moines", state: "Iowa", zip_code: "50315", user_type_id: 2
         },
         {
-          username: "cosler3f", first_name: "Ches", last_name: "Osler", email: "cosler3f@dmoz.org", street_address: "0 Southridge Point", street_address_2: "PO Box 1306", city: "Milwaukee", state: "Wisconsin", zip_code: "53234", user_type_id: 2
+          username: "cosler3f", password_hash: "cosler3f_pass", first_name: "Ches", last_name: "Osler", email: "cosler3f@dmoz.org", street_address: "0 Southridge Point", street_address_2: "PO Box 1306", city: "Milwaukee", state: "Wisconsin", zip_code: "53234", user_type_id: 2
         },
         {
-          username: "alabone3g", first_name: "Almeda", last_name: "Labone", email: "alabone3g@reuters.com", street_address: "6 Lunder Court", street_address_2: "Suite 19", city: "Washington", state: "District of Columbia", zip_code: "20470", user_type_id: 1
+          username: "alabone3g", password_hash: "alabone3g_pass", first_name: "Almeda", last_name: "Labone", email: "alabone3g@reuters.com", street_address: "6 Lunder Court", street_address_2: "Suite 19", city: "Washington", state: "District of Columbia", zip_code: "20470", user_type_id: 1
         },
         {
-          username: "dporritt3h", first_name: "Dorena", last_name: "Porritt", email: "dporritt3h@sakura.ne.jp", street_address: "14610 Grover Way", street_address_2: "Suite 78", city: "Tallahassee", state: "Florida", zip_code: "32304", user_type_id: 2
+          username: "dporritt3h", password_hash: "dporritt3h_pass", first_name: "Dorena", last_name: "Porritt", email: "dporritt3h@sakura.ne.jp", street_address: "14610 Grover Way", street_address_2: "Suite 78", city: "Tallahassee", state: "Florida", zip_code: "32304", user_type_id: 2
         },
         {
-          username: "brue3i", first_name: "Brendan", last_name: "Rue", email: "brue3i@themeforest.net", street_address: "278 Amoth Center", street_address_2: "PO Box 93946", city: "Pueblo", state: "Colorado", zip_code: "81005", user_type_id: 2
+          username: "brue3i", password_hash: "brue3i_pass", first_name: "Brendan", last_name: "Rue", email: "brue3i@themeforest.net", street_address: "278 Amoth Center", street_address_2: "PO Box 93946", city: "Pueblo", state: "Colorado", zip_code: "81005", user_type_id: 2
         },
         {
-          username: "ochagg3j", first_name: "Odille", last_name: "Chagg", email: "ochagg3j@com.com", street_address: "1 Sheridan Circle", street_address_2: "Room 628", city: "Sterling", state: "Virginia", zip_code: "20167", user_type_id: 2
+          username: "ochagg3j", password_hash: "ochagg3j_pass", first_name: "Odille", last_name: "Chagg", email: "ochagg3j@com.com", street_address: "1 Sheridan Circle", street_address_2: "Room 628", city: "Sterling", state: "Virginia", zip_code: "20167", user_type_id: 2
         },
         {
-          username: "rcastelot3k", first_name: "Ric", last_name: "Castelot", email: "rcastelot3k@rakuten.co.jp", street_address: "440 Johnson Plaza", street_address_2: "20th Floor", city: "Philadelphia", state: "Pennsylvania", zip_code: "19160", user_type_id: 1
+          username: "rcastelot3k", password_hash: "rcastelot3k_pass", first_name: "Ric", last_name: "Castelot", email: "rcastelot3k@rakuten.co.jp", street_address: "440 Johnson Plaza", street_address_2: "20th Floor", city: "Philadelphia", state: "Pennsylvania", zip_code: "19160", user_type_id: 1
         },
         {
-          username: "rbeecraft3l", first_name: "Royall", last_name: "Beecraft", email: "rbeecraft3l@aol.com", street_address: "10 Hauk Lane", street_address_2: "Suite 53", city: "Chicago", state: "Illinois", zip_code: "60604", user_type_id: 2
+          username: "rbeecraft3l", password_hash: "rbeecraft3l_pass", first_name: "Royall", last_name: "Beecraft", email: "rbeecraft3l@aol.com", street_address: "10 Hauk Lane", street_address_2: "Suite 53", city: "Chicago", state: "Illinois", zip_code: "60604", user_type_id: 2
         },
         {
-          username: "mleather3m", first_name: "Marsiella", last_name: "Leather", email: "mleather3m@nature.com", street_address: "62789 Spenser Point", street_address_2: "16th Floor", city: "Trenton", state: "New Jersey", zip_code: "08603", user_type_id: 1
+          username: "mleather3m", password_hash: "mleather3m_pass", first_name: "Marsiella", last_name: "Leather", email: "mleather3m@nature.com", street_address: "62789 Spenser Point", street_address_2: "16th Floor", city: "Trenton", state: "New Jersey", zip_code: "08603", user_type_id: 1
         },
         {
-          username: "jeste3n", first_name: "Jarib", last_name: "Este", email: "jeste3n@4shared.com", street_address: "895 Hooker Center", street_address_2: "Room 1199", city: "Lynchburg", state: "Virginia", zip_code: "24515", user_type_id: 2
+          username: "jeste3n", password_hash: "jeste3n_pass", first_name: "Jarib", last_name: "Este", email: "jeste3n@4shared.com", street_address: "895 Hooker Center", street_address_2: "Room 1199", city: "Lynchburg", state: "Virginia", zip_code: "24515", user_type_id: 2
         },
         {
-          username: "abeachamp3o", first_name: "Alex", last_name: "Beachamp", email: "abeachamp3o@ucla.edu", street_address: "30840 Granby Avenue", street_address_2: "Room 231", city: "Sioux Falls", state: "South Dakota", zip_code: "57198", user_type_id: 1
+          username: "abeachamp3o", password_hash: "abeachamp3o_pass", first_name: "Alex", last_name: "Beachamp", email: "abeachamp3o@ucla.edu", street_address: "30840 Granby Avenue", street_address_2: "Room 231", city: "Sioux Falls", state: "South Dakota", zip_code: "57198", user_type_id: 1
         },
         {
-          username: "rbuncher3p", first_name: "Roberta", last_name: "Buncher", email: "rbuncher3p@parallels.com", street_address: "115 Hollow Ridge Avenue", street_address_2: "PO Box 81637", city: "Schenectady", state: "New York", zip_code: "12305", user_type_id: 2
+          username: "rbuncher3p", password_hash: "rbuncher3p_pass", first_name: "Roberta", last_name: "Buncher", email: "rbuncher3p@parallels.com", street_address: "115 Hollow Ridge Avenue", street_address_2: "PO Box 81637", city: "Schenectady", state: "New York", zip_code: "12305", user_type_id: 2
         },
         {
-          username: "rfahy3q", first_name: "Rania", last_name: "Fahy", email: "rfahy3q@dion.ne.jp", street_address: "5063 Moose Parkway", street_address_2: "PO Box 45564", city: "Anchorage", state: "Alaska", zip_code: "99517", user_type_id: 2
+          username: "rfahy3q", password_hash: "rfahy3q_pass", first_name: "Rania", last_name: "Fahy", email: "rfahy3q@dion.ne.jp", street_address: "5063 Moose Parkway", street_address_2: "PO Box 45564", city: "Anchorage", state: "Alaska", zip_code: "99517", user_type_id: 2
         },
         {
-          username: "gfayter3r", first_name: "Gabriell", last_name: "Fayter", email: "gfayter3r@phoca.cz", street_address: "0 Graedel Alley", street_address_2: "10th Floor", city: "Denver", state: "Colorado", zip_code: "80209", user_type_id: 1
+          username: "gfayter3r", password_hash: "gfayter3r_pass", first_name: "Gabriell", last_name: "Fayter", email: "gfayter3r@phoca.cz", street_address: "0 Graedel Alley", street_address_2: "10th Floor", city: "Denver", state: "Colorado", zip_code: "80209", user_type_id: 1
         },
         {
-          username: "dwoodcroft3s", first_name: "Dennie", last_name: "Woodcroft", email: "dwoodcroft3s@dagondesign.com", street_address: "9 Macpherson Street", street_address_2: "PO Box 8727", city: "San Jose", state: "California", zip_code: "95123", user_type_id: 2
+          username: "dwoodcroft3s", password_hash: "dwoodcroft3s_pass", first_name: "Dennie", last_name: "Woodcroft", email: "dwoodcroft3s@dagondesign.com", street_address: "9 Macpherson Street", street_address_2: "PO Box 8727", city: "San Jose", state: "California", zip_code: "95123", user_type_id: 2
         },
         {
-          username: "peggleson3t", first_name: "Peyter", last_name: "Eggleson", email: "peggleson3t@diigo.com", street_address: "6 Killdeer Hill", street_address_2: "Apt 222", city: "Midland", state: "Texas", zip_code: "79705", user_type_id: 1
+          username: "peggleson3t", password_hash: "peggleson3t_pass", first_name: "Peyter", last_name: "Eggleson", email: "peggleson3t@diigo.com", street_address: "6 Killdeer Hill", street_address_2: "Apt 222", city: "Midland", state: "Texas", zip_code: "79705", user_type_id: 1
         },
         {
-          username: "mianson3u", first_name: "Mirabella", last_name: "I'anson", email: "mianson3u@nbcnews.com", street_address: "7234 Farwell Plaza", street_address_2: "PO Box 48099", city: "Sioux City", state: "Iowa", zip_code: "51110", user_type_id: 1
+          username: "mianson3u", password_hash: "mianson3u_pass", first_name: "Mirabella", last_name: "I'anson", email: "mianson3u@nbcnews.com", street_address: "7234 Farwell Plaza", street_address_2: "PO Box 48099", city: "Sioux City", state: "Iowa", zip_code: "51110", user_type_id: 1
         },
         {
-          username: "msissens3v", first_name: "Maje", last_name: "Sissens", email: "msissens3v@amazonaws.com", street_address: "02599 Meadow Vale Court", street_address_2: "Apt 509", city: "Portland", state: "Oregon", zip_code: "97232", user_type_id: 2
+          username: "msissens3v", password_hash: "msissens3v_pass", first_name: "Maje", last_name: "Sissens", email: "msissens3v@amazonaws.com", street_address: "02599 Meadow Vale Court", street_address_2: "Apt 509", city: "Portland", state: "Oregon", zip_code: "97232", user_type_id: 2
         },
         {
-          username: "ipervoe3w", first_name: "Ianthe", last_name: "Pervoe", email: "ipervoe3w@prlog.org", street_address: "34333 Harper Road", street_address_2: "Room 1223", city: "New Orleans", state: "Louisiana", zip_code: "70154", user_type_id: 2
+          username: "ipervoe3w", password_hash: "ipervoe3w_pass", first_name: "Ianthe", last_name: "Pervoe", email: "ipervoe3w@prlog.org", street_address: "34333 Harper Road", street_address_2: "Room 1223", city: "New Orleans", state: "Louisiana", zip_code: "70154", user_type_id: 2
         },
         {
-          username: "rbenedit3x", first_name: "Rafaela", last_name: "Benedit", email: "rbenedit3x@netscape.com", street_address: "5899 Coleman Center", street_address_2: "PO Box 40316", city: "New York City", state: "New York", zip_code: "10105", user_type_id: 1
+          username: "rbenedit3x", password_hash: "rbenedit3x_pass", first_name: "Rafaela", last_name: "Benedit", email: "rbenedit3x@netscape.com", street_address: "5899 Coleman Center", street_address_2: "PO Box 40316", city: "New York City", state: "New York", zip_code: "10105", user_type_id: 1
         },
         {
-          username: "sweekland3y", first_name: "Stanislas", last_name: "Weekland", email: "sweekland3y@theguardian.com", street_address: "2 Larry Trail", street_address_2: "Suite 72", city: "Augusta", state: "Georgia", zip_code: "30919", user_type_id: 1
+          username: "sweekland3y", password_hash: "sweekland3y_pass", first_name: "Stanislas", last_name: "Weekland", email: "sweekland3y@theguardian.com", street_address: "2 Larry Trail", street_address_2: "Suite 72", city: "Augusta", state: "Georgia", zip_code: "30919", user_type_id: 1
         },
         {
-          username: "jkrysztofowicz3z", first_name: "Joella", last_name: "Krysztofowicz", email: "jkrysztofowicz3z@flickr.com", street_address: "29 Stang Pass", street_address_2: "Suite 37", city: "Arlington", state: "Texas", zip_code: "76011", user_type_id: 1
+          username: "jkrysztofowicz3z", password_hash: "jkrysztofowicz3z_pass", first_name: "Joella", last_name: "Krysztofowicz", email: "jkrysztofowicz3z@flickr.com", street_address: "29 Stang Pass", street_address_2: "Suite 37", city: "Arlington", state: "Texas", zip_code: "76011", user_type_id: 1
         },
         {
-          username: "ccorten40", first_name: "Cynthea", last_name: "Corten", email: "ccorten40@salon.com", street_address: "4774 Macpherson Hill", street_address_2: "Room 1702", city: "Minneapolis", state: "Minnesota", zip_code: "55423", user_type_id: 2
+          username: "ccorten40", password_hash: "ccorten40_pass", first_name: "Cynthea", last_name: "Corten", email: "ccorten40@salon.com", street_address: "4774 Macpherson Hill", street_address_2: "Room 1702", city: "Minneapolis", state: "Minnesota", zip_code: "55423", user_type_id: 2
         },
         {
-          username: "tacock41", first_name: "Teodora", last_name: "Acock", email: "tacock41@delicious.com", street_address: "8710 Hansons Drive", street_address_2: "Suite 32", city: "Orlando", state: "Florida", zip_code: "32808", user_type_id: 2
+          username: "tacock41", password_hash: "tacock41_pass", first_name: "Teodora", last_name: "Acock", email: "tacock41@delicious.com", street_address: "8710 Hansons Drive", street_address_2: "Suite 32", city: "Orlando", state: "Florida", zip_code: "32808", user_type_id: 2
         },
         {
-          username: "icotmore42", first_name: "Ignacio", last_name: "Cotmore", email: "icotmore42@sbwire.com", street_address: "75368 Duke Hill", street_address_2: "Suite 36", city: "Fayetteville", state: "North Carolina", zip_code: "28305", user_type_id: 1
+          username: "icotmore42", password_hash: "icotmore42_pass", first_name: "Ignacio", last_name: "Cotmore", email: "icotmore42@sbwire.com", street_address: "75368 Duke Hill", street_address_2: "Suite 36", city: "Fayetteville", state: "North Carolina", zip_code: "28305", user_type_id: 1
         },
         {
-          username: "adullingham43", first_name: "Alysa", last_name: "Dullingham", email: "adullingham43@unblog.fr", street_address: "9 Westridge Junction", street_address_2: "PO Box 89597", city: "Colorado Springs", state: "Colorado", zip_code: "80940", user_type_id: 2
+          username: "adullingham43", password_hash: "adullingham43_pass", first_name: "Alysa", last_name: "Dullingham", email: "adullingham43@unblog.fr", street_address: "9 Westridge Junction", street_address_2: "PO Box 89597", city: "Colorado Springs", state: "Colorado", zip_code: "80940", user_type_id: 2
         },
         {
-          username: "cmacdunleavy44", first_name: "Cesaro", last_name: "MacDunleavy", email: "cmacdunleavy44@mediafire.com", street_address: "87739 New Castle Road", street_address_2: "PO Box 94239", city: "New York City", state: "New York", zip_code: "10292", user_type_id: 1
+          username: "cmacdunleavy44", password_hash: "cmacdunleavy44_pass", first_name: "Cesaro", last_name: "MacDunleavy", email: "cmacdunleavy44@mediafire.com", street_address: "87739 New Castle Road", street_address_2: "PO Box 94239", city: "New York City", state: "New York", zip_code: "10292", user_type_id: 1
         },
         {
-          username: "camor45", first_name: "Chlo", last_name: "Amor", email: "camor45@hibu.com", street_address: "52264 Towne Junction", street_address_2: "PO Box 22396", city: "Mobile", state: "Alabama", zip_code: "36689", user_type_id: 1
+          username: "camor45", password_hash: "camor45_pass", first_name: "Chlo", last_name: "Amor", email: "camor45@hibu.com", street_address: "52264 Towne Junction", street_address_2: "PO Box 22396", city: "Mobile", state: "Alabama", zip_code: "36689", user_type_id: 1
         },
         {
-          username: "mnussen46", first_name: "Maurizio", last_name: "Nussen", email: "mnussen46@flickr.com", street_address: "60 Scofield Circle", street_address_2: "Apt 872", city: "Las Vegas", state: "Nevada", zip_code: "89110", user_type_id: 2
+          username: "mnussen46", password_hash: "mnussen46_pass", first_name: "Maurizio", last_name: "Nussen", email: "mnussen46@flickr.com", street_address: "60 Scofield Circle", street_address_2: "Apt 872", city: "Las Vegas", state: "Nevada", zip_code: "89110", user_type_id: 2
         },
         {
-          username: "aclemmitt47", first_name: "Aurlie", last_name: "Clemmitt", email: "aclemmitt47@usa.gov", street_address: "974 Oxford Plaza", street_address_2: "Apt 1780", city: "Washington", state: "District of Columbia", zip_code: "20392", user_type_id: 2
+          username: "aclemmitt47", password_hash: "aclemmitt47_pass", first_name: "Aurlie", last_name: "Clemmitt", email: "aclemmitt47@usa.gov", street_address: "974 Oxford Plaza", street_address_2: "Apt 1780", city: "Washington", state: "District of Columbia", zip_code: "20392", user_type_id: 2
         },
         {
-          username: "fscandred48", first_name: "Freddi", last_name: "Scandred", email: "fscandred48@github.com", street_address: "6 Warbler Street", street_address_2: "Apt 1429", city: "Saint Paul", state: "Minnesota", zip_code: "55166", user_type_id: 1
+          username: "fscandred48", password_hash: "fscandred48_pass", first_name: "Freddi", last_name: "Scandred", email: "fscandred48@github.com", street_address: "6 Warbler Street", street_address_2: "Apt 1429", city: "Saint Paul", state: "Minnesota", zip_code: "55166", user_type_id: 1
         },
         {
-          username: "jrodders49", first_name: "Jenine", last_name: "Rodders", email: "jrodders49@bbc.co.uk", street_address: "860 Raven Street", street_address_2: "PO Box 63718", city: "Savannah", state: "Georgia", zip_code: "31410", user_type_id: 2
+          username: "jrodders49", password_hash: "jrodders49_pass", first_name: "Jenine", last_name: "Rodders", email: "jrodders49@bbc.co.uk", street_address: "860 Raven Street", street_address_2: "PO Box 63718", city: "Savannah", state: "Georgia", zip_code: "31410", user_type_id: 2
         },
         {
-          username: "rfolds4a", first_name: "Robbin", last_name: "Folds", email: "rfolds4a@livejournal.com", street_address: "67 Hagan Drive", street_address_2: "Apt 1016", city: "Murfreesboro", state: "Tennessee", zip_code: "37131", user_type_id: 2
+          username: "rfolds4a", password_hash: "rfolds4a_pass", first_name: "Robbin", last_name: "Folds", email: "rfolds4a@livejournal.com", street_address: "67 Hagan Drive", street_address_2: "Apt 1016", city: "Murfreesboro", state: "Tennessee", zip_code: "37131", user_type_id: 2
         },
         {
-          username: "tpetranek4b", first_name: "Todd", last_name: "Petranek", email: "tpetranek4b@tinyurl.com", street_address: "529 Rigney Place", street_address_2: "Suite 73", city: "Charleston", state: "West Virginia", zip_code: "25331", user_type_id: 1
+          username: "tpetranek4b", password_hash: "tpetranek4b_pass", first_name: "Todd", last_name: "Petranek", email: "tpetranek4b@tinyurl.com", street_address: "529 Rigney Place", street_address_2: "Suite 73", city: "Charleston", state: "West Virginia", zip_code: "25331", user_type_id: 1
         },
         {
-          username: "amartugin4c", first_name: "Anson", last_name: "Martugin", email: "amartugin4c@163.com", street_address: "39 Dexter Lane", street_address_2: "Room 1481", city: "Houston", state: "Texas", zip_code: "77070", user_type_id: 2
+          username: "amartugin4c", password_hash: "amartugin4c_pass", first_name: "Anson", last_name: "Martugin", email: "amartugin4c@163.com", street_address: "39 Dexter Lane", street_address_2: "Room 1481", city: "Houston", state: "Texas", zip_code: "77070", user_type_id: 2
         },
         {
-          username: "mclow4d", first_name: "Myrlene", last_name: "Clow", email: "mclow4d@biglobe.ne.jp", street_address: "7 Milwaukee Avenue", street_address_2: "Apt 165", city: "Las Vegas", state: "Nevada", zip_code: "89145", user_type_id: 2
+          username: "mclow4d", password_hash: "mclow4d_pass", first_name: "Myrlene", last_name: "Clow", email: "mclow4d@biglobe.ne.jp", street_address: "7 Milwaukee Avenue", street_address_2: "Apt 165", city: "Las Vegas", state: "Nevada", zip_code: "89145", user_type_id: 2
         },
         {
-          username: "mmerrill4e", first_name: "Manon", last_name: "Merrill", email: "mmerrill4e@gov.uk", street_address: "34930 Comanche Avenue", street_address_2: "Apt 1028", city: "Albany", state: "New York", zip_code: "12247", user_type_id: 1
+          username: "mmerrill4e", password_hash: "mmerrill4e_pass", first_name: "Manon", last_name: "Merrill", email: "mmerrill4e@gov.uk", street_address: "34930 Comanche Avenue", street_address_2: "Apt 1028", city: "Albany", state: "New York", zip_code: "12247", user_type_id: 1
         },
         {
-          username: "lpankhurst4f", first_name: "Linc", last_name: "Pankhurst.", email: "lpankhurst4f@springer.com", street_address: "50749 Lotheville Terrace", street_address_2: "Suite 84", city: "Pensacola", state: "Florida", zip_code: "32575", user_type_id: 1
+          username: "lpankhurst4f", password_hash: "lpankhurst4f_pass", first_name: "Linc", last_name: "Pankhurst.", email: "lpankhurst4f@springer.com", street_address: "50749 Lotheville Terrace", street_address_2: "Suite 84", city: "Pensacola", state: "Florida", zip_code: "32575", user_type_id: 1
         },
         {
-          username: "tbunyard4g", first_name: "Tam", last_name: "Bunyard", email: "tbunyard4g@unicef.org", street_address: "152 Lillian Road", street_address_2: "Suite 10", city: "Miami", state: "Florida", zip_code: "33175", user_type_id: 1
+          username: "tbunyard4g", password_hash: "tbunyard4g_pass", first_name: "Tam", last_name: "Bunyard", email: "tbunyard4g@unicef.org", street_address: "152 Lillian Road", street_address_2: "Suite 10", city: "Miami", state: "Florida", zip_code: "33175", user_type_id: 1
         },
         {
-          username: "jbonde4h", first_name: "Julienne", last_name: "Bonde", email: "jbonde4h@sakura.ne.jp", street_address: "48326 Kropf Junction", street_address_2: "Suite 15", city: "Watertown", state: "Massachusetts", zip_code: "02472", user_type_id: 1
+          username: "jbonde4h", password_hash: "jbonde4h_pass", first_name: "Julienne", last_name: "Bonde", email: "jbonde4h@sakura.ne.jp", street_address: "48326 Kropf Junction", street_address_2: "Suite 15", city: "Watertown", state: "Massachusetts", zip_code: "02472", user_type_id: 1
         },
         {
-          username: "jlevington4i", first_name: "Julie", last_name: "Levington", email: "jlevington4i@vimeo.com", street_address: "69856 Springs Terrace", street_address_2: "5th Floor", city: "Tuscaloosa", state: "Alabama", zip_code: "35487", user_type_id: 2
+          username: "jlevington4i", password_hash: "jlevington4i_pass", first_name: "Julie", last_name: "Levington", email: "jlevington4i@vimeo.com", street_address: "69856 Springs Terrace", street_address_2: "5th Floor", city: "Tuscaloosa", state: "Alabama", zip_code: "35487", user_type_id: 2
         },
         {
-          username: "boleksiak4j", first_name: "Beverley", last_name: "Oleksiak", email: "boleksiak4j@independent.co.uk", street_address: "9842 Riverside Avenue", street_address_2: "18th Floor", city: "Loretto", state: "Minnesota", zip_code: "55598", user_type_id: 2
+          username: "boleksiak4j", password_hash: "boleksiak4j_pass", first_name: "Beverley", last_name: "Oleksiak", email: "boleksiak4j@independent.co.uk", street_address: "9842 Riverside Avenue", street_address_2: "18th Floor", city: "Loretto", state: "Minnesota", zip_code: "55598", user_type_id: 2
         },
         {
-          username: "icorrado4k", first_name: "Iolanthe", last_name: "Corrado", email: "icorrado4k@kickstarter.com", street_address: "93 Golf Way", street_address_2: "Room 959", city: "Mesa", state: "Arizona", zip_code: "85210", user_type_id: 2
+          username: "icorrado4k", password_hash: "icorrado4k_pass", first_name: "Iolanthe", last_name: "Corrado", email: "icorrado4k@kickstarter.com", street_address: "93 Golf Way", street_address_2: "Room 959", city: "Mesa", state: "Arizona", zip_code: "85210", user_type_id: 2
         },
         {
-          username: "bprecious4l", first_name: "Beitris", last_name: "Precious", email: "bprecious4l@arstechnica.com", street_address: "3073 Cordelia Terrace", street_address_2: "PO Box 44258", city: "Amarillo", state: "Texas", zip_code: "79105", user_type_id: 2
+          username: "bprecious4l", password_hash: "bprecious4l_pass", first_name: "Beitris", last_name: "Precious", email: "bprecious4l@arstechnica.com", street_address: "3073 Cordelia Terrace", street_address_2: "PO Box 44258", city: "Amarillo", state: "Texas", zip_code: "79105", user_type_id: 2
         },
         {
-          username: "kmewha4m", first_name: "Kayne", last_name: "Mewha", email: "kmewha4m@woothemes.com", street_address: "0 Redwing Pass", street_address_2: "5th Floor", city: "Decatur", state: "Illinois", zip_code: "62525", user_type_id: 1
+          username: "kmewha4m", password_hash: "kmewha4m_pass", first_name: "Kayne", last_name: "Mewha", email: "kmewha4m@woothemes.com", street_address: "0 Redwing Pass", street_address_2: "5th Floor", city: "Decatur", state: "Illinois", zip_code: "62525", user_type_id: 1
         },
         {
-          username: "areagan4n", first_name: "Alphonse", last_name: "Reagan", email: "areagan4n@pbs.org", street_address: "0185 Darwin Plaza", street_address_2: "PO Box 28556", city: "Pueblo", state: "Colorado", zip_code: "81015", user_type_id: 2
+          username: "areagan4n", password_hash: "areagan4n_pass", first_name: "Alphonse", last_name: "Reagan", email: "areagan4n@pbs.org", street_address: "0185 Darwin Plaza", street_address_2: "PO Box 28556", city: "Pueblo", state: "Colorado", zip_code: "81015", user_type_id: 2
         },
         {
-          username: "mmacgillivrie4o", first_name: "Melodee", last_name: "MacGillivrie", email: "mmacgillivrie4o@creativecommons.org", street_address: "0 Buhler Junction", street_address_2: "Suite 46", city: "Garden Grove", state: "California", zip_code: "92645", user_type_id: 1
+          username: "mmacgillivrie4o", password_hash: "mmacgillivrie4o_pass", first_name: "Melodee", last_name: "MacGillivrie", email: "mmacgillivrie4o@creativecommons.org", street_address: "0 Buhler Junction", street_address_2: "Suite 46", city: "Garden Grove", state: "California", zip_code: "92645", user_type_id: 1
         },
         {
-          username: "rstanhope4p", first_name: "Ruby", last_name: "Stanhope", email: "rstanhope4p@163.com", street_address: "77899 American Ash Way", street_address_2: "Suite 21", city: "Palo Alto", state: "California", zip_code: "94302", user_type_id: 2
+          username: "rstanhope4p", password_hash: "rstanhope4p_pass", first_name: "Ruby", last_name: "Stanhope", email: "rstanhope4p@163.com", street_address: "77899 American Ash Way", street_address_2: "Suite 21", city: "Palo Alto", state: "California", zip_code: "94302", user_type_id: 2
         },
         {
-          username: "jberryman4q", first_name: "Joanie", last_name: "Berryman", email: "jberryman4q@noaa.gov", street_address: "41 Corben Point", street_address_2: "Room 203", city: "Fort Worth", state: "Texas", zip_code: "76162", user_type_id: 2
+          username: "jberryman4q", password_hash: "jberryman4q_pass", first_name: "Joanie", last_name: "Berryman", email: "jberryman4q@noaa.gov", street_address: "41 Corben Point", street_address_2: "Room 203", city: "Fort Worth", state: "Texas", zip_code: "76162", user_type_id: 2
         },
         {
-          username: "hdangl4r", first_name: "Hedi", last_name: "Dangl", email: "hdangl4r@umn.edu", street_address: "543 Pleasure Way", street_address_2: "Room 1073", city: "San Diego", state: "California", zip_code: "92176", user_type_id: 2
+          username: "hdangl4r", password_hash: "hdangl4r_pass", first_name: "Hedi", last_name: "Dangl", email: "hdangl4r@umn.edu", street_address: "543 Pleasure Way", street_address_2: "Room 1073", city: "San Diego", state: "California", zip_code: "92176", user_type_id: 2
         },
         {
-          username: "nlibreros4s", first_name: "Nestor", last_name: "Libreros", email: "nlibreros4s@msu.edu", street_address: "531 Oxford Alley", street_address_2: "Apt 1487", city: "Atlanta", state: "Georgia", zip_code: "30386", user_type_id: 2
+          username: "nlibreros4s", password_hash: "nlibreros4s_pass", first_name: "Nestor", last_name: "Libreros", email: "nlibreros4s@msu.edu", street_address: "531 Oxford Alley", street_address_2: "Apt 1487", city: "Atlanta", state: "Georgia", zip_code: "30386", user_type_id: 2
         },
         {
-          username: "tmaunton4t", first_name: "Thomasine", last_name: "Maunton", email: "tmaunton4t@yellowpages.com", street_address: "6 Brown Hill", street_address_2: "9th Floor", city: "Saint Paul", state: "Minnesota", zip_code: "55188", user_type_id: 1
+          username: "tmaunton4t", password_hash: "tmaunton4t_pass", first_name: "Thomasine", last_name: "Maunton", email: "tmaunton4t@yellowpages.com", street_address: "6 Brown Hill", street_address_2: "9th Floor", city: "Saint Paul", state: "Minnesota", zip_code: "55188", user_type_id: 1
         },
         {
-          username: "hleare4u", first_name: "Hermia", last_name: "Leare", email: "hleare4u@hp.com", street_address: "1 Sutherland Avenue", street_address_2: "Apt 19", city: "New York City", state: "New York", zip_code: "10270", user_type_id: 2
+          username: "hleare4u", password_hash: "hleare4u_pass", first_name: "Hermia", last_name: "Leare", email: "hleare4u@hp.com", street_address: "1 Sutherland Avenue", street_address_2: "Apt 19", city: "New York City", state: "New York", zip_code: "10270", user_type_id: 2
         },
         {
-          username: "jdaintree4v", first_name: "Jack", last_name: "Daintree", email: "jdaintree4v@typepad.com", street_address: "3 Novick Pass", street_address_2: "Apt 1235", city: "Young America", state: "Minnesota", zip_code: "55551", user_type_id: 2
+          username: "jdaintree4v", password_hash: "jdaintree4v_pass", first_name: "Jack", last_name: "Daintree", email: "jdaintree4v@typepad.com", street_address: "3 Novick Pass", street_address_2: "Apt 1235", city: "Young America", state: "Minnesota", zip_code: "55551", user_type_id: 2
         },
         {
-          username: "hbruhnicke4w", first_name: "Holly-anne", last_name: "Bruhnicke", email: "hbruhnicke4w@mlb.com", street_address: "91 Hanson Place", street_address_2: "16th Floor", city: "Scranton", state: "Pennsylvania", zip_code: "18514", user_type_id: 1
+          username: "hbruhnicke4w", password_hash: "hbruhnicke4w_pass", first_name: "Holly-anne", last_name: "Bruhnicke", email: "hbruhnicke4w@mlb.com", street_address: "91 Hanson Place", street_address_2: "16th Floor", city: "Scranton", state: "Pennsylvania", zip_code: "18514", user_type_id: 1
         },
         {
-          username: "krennison4x", first_name: "Kristyn", last_name: "Rennison", email: "krennison4x@canalblog.com", street_address: "2 Pond Center", street_address_2: "Apt 1768", city: "Columbia", state: "South Carolina", zip_code: "29225", user_type_id: 1
+          username: "krennison4x", password_hash: "krennison4x_pass", first_name: "Kristyn", last_name: "Rennison", email: "krennison4x@canalblog.com", street_address: "2 Pond Center", street_address_2: "Apt 1768", city: "Columbia", state: "South Carolina", zip_code: "29225", user_type_id: 1
         },
         {
-          username: "fcumbes4y", first_name: "Fernandina", last_name: "Cumbes", email: "fcumbes4y@house.gov", street_address: "37 Blue Bill Park Street", street_address_2: "Room 1417", city: "Glendale", state: "California", zip_code: "91210", user_type_id: 1
+          username: "fcumbes4y", password_hash: "fcumbes4y_pass", first_name: "Fernandina", last_name: "Cumbes", email: "fcumbes4y@house.gov", street_address: "37 Blue Bill Park Street", street_address_2: "Room 1417", city: "Glendale", state: "California", zip_code: "91210", user_type_id: 1
         },
         {
-          username: "fbater4z", first_name: "Freeman", last_name: "Bater", email: "fbater4z@prlog.org", street_address: "53052 Canary Road", street_address_2: "Room 1916", city: "Rochester", state: "New York", zip_code: "14646", user_type_id: 1
+          username: "fbater4z", password_hash: "fbater4z_pass", first_name: "Freeman", last_name: "Bater", email: "fbater4z@prlog.org", street_address: "53052 Canary Road", street_address_2: "Room 1916", city: "Rochester", state: "New York", zip_code: "14646", user_type_id: 1
         },
         {
-          username: "bpittham50", first_name: "Bill", last_name: "Pittham", email: "bpittham50@mediafire.com", street_address: "98 Spaight Point", street_address_2: "13th Floor", city: "Vancouver", state: "Washington", zip_code: "98664", user_type_id: 2
+          username: "bpittham50", password_hash: "bpittham50_pass", first_name: "Bill", last_name: "Pittham", email: "bpittham50@mediafire.com", street_address: "98 Spaight Point", street_address_2: "13th Floor", city: "Vancouver", state: "Washington", zip_code: "98664", user_type_id: 2
         },
         {
-          username: "vkalvin51", first_name: "Verla", last_name: "Kalvin", email: "vkalvin51@issuu.com", street_address: "2 Towne Pass", street_address_2: "Apt 585", city: "Sioux Falls", state: "South Dakota", zip_code: "57193", user_type_id: 1
+          username: "vkalvin51", password_hash: "vkalvin51_pass", first_name: "Verla", last_name: "Kalvin", email: "vkalvin51@issuu.com", street_address: "2 Towne Pass", street_address_2: "Apt 585", city: "Sioux Falls", state: "South Dakota", zip_code: "57193", user_type_id: 1
         },
         {
-          username: "mhlavecek52", first_name: "Marshal", last_name: "Hlavecek", email: "mhlavecek52@fastcompany.com", street_address: "08175 High Crossing Junction", street_address_2: "11th Floor", city: "Phoenix", state: "Arizona", zip_code: "85045", user_type_id: 1
+          username: "mhlavecek52", password_hash: "mhlavecek52_pass", first_name: "Marshal", last_name: "Hlavecek", email: "mhlavecek52@fastcompany.com", street_address: "08175 High Crossing Junction", street_address_2: "11th Floor", city: "Phoenix", state: "Arizona", zip_code: "85045", user_type_id: 1
         },
         {
-          username: "rrivers53", first_name: "Raynell", last_name: "Rivers", email: "rrivers53@xinhuanet.com", street_address: "763 Beilfuss Circle", street_address_2: "Room 264", city: "Tampa", state: "Florida", zip_code: "33620", user_type_id: 2
+          username: "rrivers53", password_hash: "rrivers53_pass", first_name: "Raynell", last_name: "Rivers", email: "rrivers53@xinhuanet.com", street_address: "763 Beilfuss Circle", street_address_2: "Room 264", city: "Tampa", state: "Florida", zip_code: "33620", user_type_id: 2
         },
         {
-          username: "dpostlethwaite54", first_name: "Dorette", last_name: "Postlethwaite", email: "dpostlethwaite54@networksolutions.com", street_address: "6 East Hill", street_address_2: "PO Box 87369", city: "South Bend", state: "Indiana", zip_code: "46699", user_type_id: 1
+          username: "dpostlethwaite54", password_hash: "dpostlethwaite54_pass", first_name: "Dorette", last_name: "Postlethwaite", email: "dpostlethwaite54@networksolutions.com", street_address: "6 East Hill", street_address_2: "PO Box 87369", city: "South Bend", state: "Indiana", zip_code: "46699", user_type_id: 1
         },
         {
-          username: "lmattke55", first_name: "Lavina", last_name: "Mattke", email: "lmattke55@vistaprint.com", street_address: "3 Rusk Crossing", street_address_2: "17th Floor", city: "Hamilton", state: "Ohio", zip_code: "45020", user_type_id: 1
+          username: "lmattke55", password_hash: "lmattke55_pass", first_name: "Lavina", last_name: "Mattke", email: "lmattke55@vistaprint.com", street_address: "3 Rusk Crossing", street_address_2: "17th Floor", city: "Hamilton", state: "Ohio", zip_code: "45020", user_type_id: 1
         },
         {
-          username: "nwesterman56", first_name: "Normy", last_name: "Westerman", email: "nwesterman56@ebay.co.uk", street_address: "5 Bartelt Circle", street_address_2: "Suite 96", city: "North Little Rock", state: "Arkansas", zip_code: "72118", user_type_id: 2
+          username: "nwesterman56", password_hash: "nwesterman56_pass", first_name: "Normy", last_name: "Westerman", email: "nwesterman56@ebay.co.uk", street_address: "5 Bartelt Circle", street_address_2: "Suite 96", city: "North Little Rock", state: "Arkansas", zip_code: "72118", user_type_id: 2
         },
         {
-          username: "bneames57", first_name: "Benni", last_name: "Neames", email: "bneames57@rambler.ru", street_address: "0712 Sheridan Park", street_address_2: "PO Box 4239", city: "Dearborn", state: "Michigan", zip_code: "48126", user_type_id: 2
+          username: "bneames57", password_hash: "bneames57_pass", first_name: "Benni", last_name: "Neames", email: "bneames57@rambler.ru", street_address: "0712 Sheridan Park", street_address_2: "PO Box 4239", city: "Dearborn", state: "Michigan", zip_code: "48126", user_type_id: 2
         },
         {
-          username: "lclementucci58", first_name: "Leopold", last_name: "Clementucci", email: "lclementucci58@home.pl", street_address: "91251 Grover Trail", street_address_2: "Room 113", city: "Fort Lauderdale", state: "Florida", zip_code: "33315", user_type_id: 1
+          username: "lclementucci58", password_hash: "lclementucci58_pass", first_name: "Leopold", last_name: "Clementucci", email: "lclementucci58@home.pl", street_address: "91251 Grover Trail", street_address_2: "Room 113", city: "Fort Lauderdale", state: "Florida", zip_code: "33315", user_type_id: 1
         },
         {
-          username: "srodell59", first_name: "Solomon", last_name: "Rodell", email: "srodell59@wired.com", street_address: "06 8th Street", street_address_2: "Room 398", city: "Santa Ana", state: "California", zip_code: "92705", user_type_id: 2
+          username: "srodell59", password_hash: "srodell59_pass", first_name: "Solomon", last_name: "Rodell", email: "srodell59@wired.com", street_address: "06 8th Street", street_address_2: "Room 398", city: "Santa Ana", state: "California", zip_code: "92705", user_type_id: 2
         },
         {
-          username: "sricardet5a", first_name: "Sula", last_name: "Ricardet", email: "sricardet5a@ucoz.com", street_address: "12 Summerview Junction", street_address_2: "Apt 408", city: "Hialeah", state: "Florida", zip_code: "33013", user_type_id: 1
+          username: "sricardet5a", password_hash: "sricardet5a_pass", first_name: "Sula", last_name: "Ricardet", email: "sricardet5a@ucoz.com", street_address: "12 Summerview Junction", street_address_2: "Apt 408", city: "Hialeah", state: "Florida", zip_code: "33013", user_type_id: 1
         },
         {
-          username: "hhaswell5b", first_name: "Hinda", last_name: "Haswell", email: "hhaswell5b@wikia.com", street_address: "6 Lillian Circle", street_address_2: "PO Box 28949", city: "Gary", state: "Indiana", zip_code: "46406", user_type_id: 1
+          username: "hhaswell5b", password_hash: "hhaswell5b_pass", first_name: "Hinda", last_name: "Haswell", email: "hhaswell5b@wikia.com", street_address: "6 Lillian Circle", street_address_2: "PO Box 28949", city: "Gary", state: "Indiana", zip_code: "46406", user_type_id: 1
         },
         {
-          username: "tpurdom5c", first_name: "Trescha", last_name: "Purdom", email: "tpurdom5c@people.com.cn", street_address: "67 Merchant Place", street_address_2: "Suite 74", city: "Shawnee Mission", state: "Kansas", zip_code: "66220", user_type_id: 1
+          username: "tpurdom5c", password_hash: "tpurdom5c_pass", first_name: "Trescha", last_name: "Purdom", email: "tpurdom5c@people.com.cn", street_address: "67 Merchant Place", street_address_2: "Suite 74", city: "Shawnee Mission", state: "Kansas", zip_code: "66220", user_type_id: 1
         },
         {
-          username: "hdeller5d", first_name: "Halette", last_name: "Deller", email: "hdeller5d@51.la", street_address: "27184 Kropf Center", street_address_2: "6th Floor", city: "Fairfield", state: "Connecticut", zip_code: "06825", user_type_id: 2
+          username: "hdeller5d", password_hash: "hdeller5d_pass", first_name: "Halette", last_name: "Deller", email: "hdeller5d@51.la", street_address: "27184 Kropf Center", street_address_2: "6th Floor", city: "Fairfield", state: "Connecticut", zip_code: "06825", user_type_id: 2
         },
         {
-          username: "eclemenza5e", first_name: "Emmy", last_name: "Clemenza", email: "eclemenza5e@hugedomains.com", street_address: "100 Village Alley", street_address_2: "PO Box 16340", city: "Lakeland", state: "Florida", zip_code: "33811", user_type_id: 1
+          username: "eclemenza5e", password_hash: "eclemenza5e_pass", first_name: "Emmy", last_name: "Clemenza", email: "eclemenza5e@hugedomains.com", street_address: "100 Village Alley", street_address_2: "PO Box 16340", city: "Lakeland", state: "Florida", zip_code: "33811", user_type_id: 1
         },
         {
-          username: "rbrunsden5f", first_name: "Rhody", last_name: "Brunsden", email: "rbrunsden5f@newyorker.com", street_address: "2869 Cambridge Court", street_address_2: "Suite 14", city: "Little Rock", state: "Arkansas", zip_code: "72222", user_type_id: 2
+          username: "rbrunsden5f", password_hash: "rbrunsden5f_pass", first_name: "Rhody", last_name: "Brunsden", email: "rbrunsden5f@newyorker.com", street_address: "2869 Cambridge Court", street_address_2: "Suite 14", city: "Little Rock", state: "Arkansas", zip_code: "72222", user_type_id: 2
         },
         {
-          username: "mtuminelli5g", first_name: "Matthaeus", last_name: "Tuminelli", email: "mtuminelli5g@gizmodo.com", street_address: "62 Fairfield Trail", street_address_2: "20th Floor", city: "Los Angeles", state: "California", zip_code: "90101", user_type_id: 1
+          username: "mtuminelli5g", password_hash: "mtuminelli5g_pass", first_name: "Matthaeus", last_name: "Tuminelli", email: "mtuminelli5g@gizmodo.com", street_address: "62 Fairfield Trail", street_address_2: "20th Floor", city: "Los Angeles", state: "California", zip_code: "90101", user_type_id: 1
         },
         {
-          username: "rhatterslay5h", first_name: "Rosanne", last_name: "Hatterslay", email: "rhatterslay5h@cam.ac.uk", street_address: "4 Arkansas Street", street_address_2: "Apt 698", city: "Huntington Beach", state: "California", zip_code: "92648", user_type_id: 1
+          username: "rhatterslay5h", password_hash: "rhatterslay5h_pass", first_name: "Rosanne", last_name: "Hatterslay", email: "rhatterslay5h@cam.ac.uk", street_address: "4 Arkansas Street", street_address_2: "Apt 698", city: "Huntington Beach", state: "California", zip_code: "92648", user_type_id: 1
         },
         {
-          username: "jstellman5i", first_name: "Juana", last_name: "Stellman", email: "jstellman5i@furl.net", street_address: "68484 Summerview Circle", street_address_2: "PO Box 14859", city: "Mobile", state: "Alabama", zip_code: "36616", user_type_id: 2
+          username: "jstellman5i", password_hash: "jstellman5i_pass", first_name: "Juana", last_name: "Stellman", email: "jstellman5i@furl.net", street_address: "68484 Summerview Circle", street_address_2: "PO Box 14859", city: "Mobile", state: "Alabama", zip_code: "36616", user_type_id: 2
         },
         {
-          username: "dpipworth5j", first_name: "Dixie", last_name: "Pipworth", email: "dpipworth5j@lulu.com", street_address: "65 Melody Point", street_address_2: "Apt 1263", city: "Boston", state: "Massachusetts", zip_code: "02109", user_type_id: 1
+          username: "dpipworth5j", password_hash: "dpipworth5j_pass", first_name: "Dixie", last_name: "Pipworth", email: "dpipworth5j@lulu.com", street_address: "65 Melody Point", street_address_2: "Apt 1263", city: "Boston", state: "Massachusetts", zip_code: "02109", user_type_id: 1
         }
       ]);
     })
