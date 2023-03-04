@@ -16,7 +16,7 @@ exports.up = function (knex) {
             table.string('first_name').notNullable();
             table.string('last_name').notNullable();
             table.string('street_address').notNullable();
-            table.string('apt_suite');
+            table.string('street_address_2');
             table.string('city').notNullable();
             table.string('state').notNullable();
             table.string('zip_code').notNullable();
@@ -28,10 +28,12 @@ exports.up = function (knex) {
             table.increments('id').primary();
             table.string('name').notNullable();
             table.string('street_address').notNullable();
-            table.string('apt_suite');
+            table.string('street_address_2');
             table.string('city').notNullable();
             table.string('state').notNullable();
             table.string('zip_code').notNullable();
+            table.string('phone').notNullable();
+
         }),
 
         knex.schema.createTable('appointments', function (table) {
