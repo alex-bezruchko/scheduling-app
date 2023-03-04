@@ -6,19 +6,24 @@
 module.exports = {
 
   development: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
-      database: process.env.APP_DATABASE,
-      user: process.env.APP_USERNAME,
-      password: process.env.APP_PASSWORD
+      database: process.env.APP_DATABASE || 'scheduler',
+      user: process.env.APP_USERNAME || 'abezruchko',
+      password: process.env.APP_PASSWORD || '',
+      port: process.env.POSTGRES_PORT,
+      host: process.env.POSTGRES_HOST
     },
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
-    }
+      directory: './db/migrations'
+    },
+    seeds: {
+      directory: './db/seeds'
+    },
   },
 
   staging: {
