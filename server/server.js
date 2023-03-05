@@ -195,7 +195,7 @@ app.post('/locations', async (req, res) => {
     const { name, street_address, street_address_2, city, state, zip_code, phone } = req.body;
 
     try {
-        const [location_id] = await db('locations').insert({
+        const [location] = await db('locations').insert({
             name,
             street_address,
             street_address_2,
@@ -205,7 +205,7 @@ app.post('/locations', async (req, res) => {
             phone,
         }).returning('id');
 
-        res.status(201).json({ id: location_id.id });
+        res.status(201).json({ id: location.id });
     } catch (error) {
         console.error('Error creating location: ', error);
         res.status(500).json({ message: 'Error creating location' });
@@ -299,6 +299,24 @@ app.get('/appointments', authenticate, async (req, res) => {
     }
 
 })
+
+app.post('/appointments', async (req, res) => {
+    const { time, user_id, location_id } = req.body;
+
+    try {
+        const [appointment] = await db('appointments').insert({
+            time,
+            user_id,
+            location_id
+        }).returning('id');
+
+        res.status(201).json({ id: appointment.id });
+    } catch (error) {
+        console.error('Error creating appointment: ', error);
+        res.status(500).json({ message: 'Error creating appointment' });
+    }
+
+});
 
 app.get('/appointments/:id', async (req, res) => {
     const { id } = req.params;
