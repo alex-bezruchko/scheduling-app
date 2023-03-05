@@ -219,6 +219,23 @@ app.get('/appointments', authenticate, async (req, res) => {
 
 })
 
+app.get('/appointments/:id', async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const appointment = await db('appointments').where({ id }).first();
+
+        if (!appointment) {
+            return res.status(404).json({ message: 'Appointment not found' });
+        }
+
+        res.json(appointment);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
 // Routes goes here
 
 app.listen(port, () => console.log(`Listening on port ${port}.`))
