@@ -174,6 +174,23 @@ app.get('/locations', authenticate, async (req, res) => {
     }
 })
 
+app.get('/locations/:id', async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const location = await db('locations').where({ id }).first();
+
+        if (!location) {
+            return res.status(404).json({ message: 'Location not found' });
+        }
+
+        res.json(location);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
 app.get('/appointments', authenticate, async (req, res) => {
 
     const { page, perPage, sort, orderBy, filterColumn, filterValue } = req.query;
