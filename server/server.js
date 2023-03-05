@@ -191,6 +191,61 @@ app.get('/locations/:id', async (req, res) => {
     }
 });
 
+app.put('/locations/:id', async (req, res) => {
+    const { id } = req.params;
+    const { name, street_address, street_address_2, city, state, zip_code, phone } = req.body;
+
+    try {
+        // Check if the location exists
+        const existingLocation = await db('locations').where({ id }).first();
+
+        if (!existingLocation) {
+            return res.status(404).json({ message: 'Location not found' });
+        }
+
+        // Update the location record
+        await db('locations').where({ id }).update({
+            name,
+            street_address,
+            street_address_2,
+            city,
+            state,
+            zip_code,
+            phone,
+        });
+
+        // Get the updated location record
+        const updatedLocation = await db('locations').where({ id }).first();
+
+        // Return the updated location record in the response
+        res.json(updatedLocation);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
+app.delete('/locations/:id', async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        // Check if the location exists
+        const existingLocation = await db('locations').where({ id }).first();
+
+        if (!existingLocation) {
+            return res.status(404).json({ message: 'Location not found' });
+        }
+
+        // Delete the location record
+        await db('locations').where({ id }).delete();
+
+        res.json({ message: 'Location deleted successfully' });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
 app.get('/appointments', authenticate, async (req, res) => {
 
     const { page, perPage, sort, orderBy, filterColumn, filterValue } = req.query;
