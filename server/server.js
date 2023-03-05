@@ -236,6 +236,9 @@ app.delete('/locations/:id', async (req, res) => {
             return res.status(404).json({ message: 'Location not found' });
         }
 
+        // Delete the associated appointments
+        await db('appointments').where({ location_id: id }).delete();
+
         // Delete the location record
         await db('locations').where({ id }).delete();
 
