@@ -130,6 +130,23 @@ app.get('/users', authenticate, async (req, res) => {
     }
 })
 
+app.get('/users/:id', async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const user = await db('users').where({ id }).first();
+
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        res.json(user);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
 app.get('/locations', authenticate, async (req, res) => {
 
     const { page, perPage, sort, orderBy, filterColumn, filterValue } = req.query;
