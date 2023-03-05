@@ -193,6 +193,7 @@ app.get('/locations/:id', async (req, res) => {
 
 app.put('/locations/:id', async (req, res) => {
     const { id } = req.params;
+
     const { name, street_address, street_address_2, city, state, zip_code, phone } = req.body;
 
     try {
@@ -288,6 +289,57 @@ app.get('/appointments/:id', async (req, res) => {
         }
 
         res.json(appointment);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
+app.put('/appointments/:id', async (req, res) => {
+    const { id } = req.params;
+    const { time, user_id, location_id } = req.body;
+
+    try {
+        // Check if the appointment exists
+        const existingAppointment = await db('appointments').where({ id }).first();
+
+        if (!existingAppointment) {
+            return res.status(404).json({ message: 'Appointment not found' });
+        }
+
+        // Update the location record
+        await db('appointments').where({ id }).update({
+            time,
+            user_id,
+            location_id
+        });
+
+        // Get the updated location record
+        const updatedAppointment = await db('appointments').where({ id }).first();
+
+        // Return the updated location record in the response
+        res.json(updatedAppointment);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
+app.delete('/appointments/:id', async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        // Check if the appointment exists
+        const existingAppointment = await db('appointments').where({ id }).first();
+
+        if (!existingAppointment) {
+            return res.status(404).json({ message: 'Appointment not found' });
+        }
+
+        // Delete the appointment record
+        await db('appointments').where({ id }).delete();
+
+        res.json({ message: 'Appointment deleted successfully' });
     } catch (err) {
         console.error(err);
         res.status(500).json({ message: 'Internal server error' });
