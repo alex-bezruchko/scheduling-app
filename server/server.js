@@ -3,7 +3,11 @@ const cors = require('express');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 const bcrypt = require('bcrypt')
-const db = require('./db/db')
+
+const db = require('./db/db');
+const knexPaginate = require('knex-paginate');
+knexPaginate.attachPaginate();
+
 
 dotenv.config();
 const app = express()
@@ -99,8 +103,86 @@ app.post('/register', (req, res) => {
         })
 })
 
-app.get('/users', authenticate, (req, res) => {
-    res.send('Hello from express server')
+app.get('/users', authenticate, async (req, res) => {
+
+    const { page, perPage, sort, orderBy, filterColumn, filterValue } = req.query;
+
+    // Build the query
+    let query = db('users');
+
+    // Apply filter if provided
+    if (filterColumn && filterValue) {
+        query = query.where(filterColumn, 'like', `%${filterValue}%`);
+    }
+
+    // Apply sorting if provided
+    if (orderBy && sort) {
+        query = query.orderBy(orderBy, sort);
+    }
+
+    // Apply pagination
+    try {
+        const { data, pagination } = await query.paginate(perPage || 10, page || 1);
+        res.json({ data, pagination });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+})
+
+app.get('/locations', authenticate, async (req, res) => {
+
+    const { page, perPage, sort, orderBy, filterColumn, filterValue } = req.query;
+
+    // Build the query
+    let query = db('locations');
+
+    // Apply filter if provided
+    if (filterColumn && filterValue) {
+        query = query.where(filterColumn, 'like', `%${filterValue}%`);
+    }
+
+    // Apply sorting if provided
+    if (orderBy && sort) {
+        query = query.orderBy(orderBy, sort);
+    }
+
+    // Apply pagination
+    try {
+        const { data, pagination } = await query.paginate(perPage || 10, page || 1);
+        res.json({ data, pagination });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+})
+
+app.get('/appointments', authenticate, async (req, res) => {
+
+    const { page, perPage, sort, orderBy, filterColumn, filterValue } = req.query;
+
+    // Build the query
+    let query = db('locations');
+
+    // Apply filter if provided
+    if (filterColumn && filterValue) {
+        query = query.where(filterColumn, 'like', `%${filterValue}%`);
+    }
+
+    // Apply sorting if provided
+    if (orderBy && sort) {
+        query = query.orderBy(orderBy, sort);
+    }
+
+    // Apply pagination
+    try {
+        const { data, pagination } = await query.paginate(perPage || 10, page || 1);
+        res.json({ data, pagination });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+
 })
 
 // Routes goes here
