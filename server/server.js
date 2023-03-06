@@ -277,7 +277,32 @@ app.get('/appointments', authenticate, async (req, res) => {
     const { page, perPage, sort, orderBy, filterColumn, filterValue } = req.query;
 
     // Build the query
-    let query = db('locations');
+    let query = db('appointments')
+        .select(
+            'appointments.id',
+            'appointments.time',
+            'appointments.user_id',
+            'appointments.location_id',
+            'users.username as user_username',
+            'users.email as user_email',
+            'users.first_name as user_first_name',
+            'users.last_name as user_last_name',
+            'users.street_address as user_street_address',
+            'users.street_address_2 as user_street_address_2',
+            'users.city as user_city',
+            'users.state as user_state',
+            'users.zip_code as user_zip_code',
+            'users.user_type_id as user_user_type_id',
+            'locations.name as location_name',
+            'locations.phone as location_phone',
+            'locations.street_address as location_street_address',
+            'locations.street_address_2 as location_street_address_2',
+            'locations.city as location_city',
+            'locations.state as location_state',
+            'locations.zip_code as location_zip_code'
+        )
+        .leftJoin('users', 'users.id', '=', 'appointments.user_id')
+        .leftJoin('locations', 'locations.id', '=', 'appointments.location_id');
 
     // Apply filter if provided
     if (filterColumn && filterValue) {
@@ -292,7 +317,36 @@ app.get('/appointments', authenticate, async (req, res) => {
     // Apply pagination
     try {
         const { data, pagination } = await query.paginate(perPage || 10, page || 1);
-        res.json({ data, pagination });
+        // Map appointments to include user and location objects
+
+        const appointments = data.map(appointment => ({
+            id: appointment.id,
+            time: appointment.time,
+            user_id: appointment.user_id,
+            location_id: appointment.location_id,
+            user: {
+                username: appointment.user_username,
+                email: appointment.user_email,
+                first_name: appointment.user_first_name,
+                last_name: appointment.user_last_name,
+                street_address: appointment.user_street_address,
+                street_address_2: appointment.user_street_address_2,
+                city: appointment.user_city,
+                state: appointment.user_state,
+                zip_code: appointment.user_zip_code,
+                user_type_id: appointment.user_user_type_id
+            },
+            location: {
+                name: appointment.location_name,
+                phone: appointment.location_phone,
+                street_address: appointment.location_street_address,
+                street_address_2: appointment.location_street_address_2,
+                city: appointment.location_city,
+                state: appointment.location_state,
+                zip_code: appointment.location_zip_code
+            }
+        }));
+        res.json({ data: appointments, pagination });
     } catch (err) {
         console.error(err);
         res.status(500).json({ message: 'Internal server error' });

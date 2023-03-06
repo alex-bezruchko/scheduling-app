@@ -6,10 +6,12 @@ import Home from './App.js';
 import Layout from './components/Layout.js';
 
 import Account from './components/pages/Account.js';
+import UserList from './components/pages/admin/Userlist.js';
+import Locations from './components/pages/admin/Locations.js';
+import Appointments from './components/pages/admin/Appointments.js';
 import Login from './components/pages/Login.js';
 import CreateAccount from './components/pages/CreateAccount.js';
 import PasswordReset from './components/pages/PasswordReset.js';
-import Appointments from './components/pages/Appointments.js';
 import NoPage from "./components/pages/NoPage.js";
 import reportWebVitals from './reportWebVitals';
 
@@ -23,6 +25,8 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="account" element={<Account />} />
+          <Route path="users" element={<UserList />} />
+          <Route path="locations" element={<Locations />} />
           <Route path="create" element={<CreateAccount />} />
           <Route path="password-reset" element={<PasswordReset />} />
           <Route path="appointments" element={<Appointments />} />
