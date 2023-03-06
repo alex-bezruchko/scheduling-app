@@ -18,7 +18,13 @@ const port = 3000;
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
-app.use(cors())
+// app.use(cors());
+
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 function authenticate(req, res, next) {
     const token = req.get("Authorization")
@@ -44,7 +50,9 @@ function authenticate(req, res, next) {
 }
 
 app.post("/login", (req, response) => {
-    const user = req.body
+    req.accepts('application/json');
+
+    const user = req.body;
     db("users")
         .where({ username: user.username })
         .first()
@@ -55,18 +63,25 @@ app.post("/login", (req, response) => {
                 Promise.resolve(retrievedUser)
             ])
                 .then(results => {
-                    const areSamePasswords = results[0]
-                    if (!areSamePasswords) throw new Error("Invalid credentials")
-                    const user = results[1]
-                    const payload = { username: user.username }
+                    const areSamePasswords = results[0];
+
                     const secret = "SECRET"
-                    jwt.sign(payload, secret, (error, token) => {
-                        if (error) {
-                            throw new Error("Sign in error!")
-                        } else {
-                            response.json({ token, user })
-                        }
-                    })
+                    if (!areSamePasswords) {
+                        throw new Error("Invalid credentials")
+                    } else {
+                        const loggedUser = results[1];
+                        const payload = { username: loggedUser.username };
+
+                        jwt.sign(payload, secret, (error, token) => {
+
+                            if (error) {
+                                throw new Error("Sign in error!");
+                            } else {
+                                response.json({ token, loggedUser });
+                            }
+                        })
+                    }
+
                 }).catch(error => {
                     response.json({ message: error.message })
                 })
