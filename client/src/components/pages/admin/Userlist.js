@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { FaEdit, FaTrashAlt } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const UserList = () => {
     const [users, setUsers] = useState([]);
@@ -169,6 +171,8 @@ const UserList = () => {
                         <th className="px-2 py-2 text-left text-sm">First Name</th>
                         <th className="px-2 py-2 text-left text-sm">Last Name</th>
                         <th className="px-2 py-2 text-left text-sm">Address</th>
+                        <th className="px-2 py-2 text-left text-sm">Edit</th>
+                        <th className="px-2 py-2 text-left text-sm">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -183,6 +187,8 @@ const UserList = () => {
                             <td className="border px-2 py-2">
                                 {`${user.street_address}${user.street_address_2 ? `, ${user.street_address_2}` : ''}, ${user.city}, ${user.state} ${user.zip_code}`}
                             </td>
+                            <td className="border px-2 py-2"><Link to={`/users/${user.id}`} className="flex justify-center text-orange-400"><FaEdit /></Link></td>
+                            <td className="border px-2 py-2"><Link to={user.id} className="flex justify-center text-red-800"><FaTrashAlt /></Link></td>
                         </tr>
                     ))}
                 </tbody>
