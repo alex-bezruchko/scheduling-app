@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,7 @@ const Navbar = () => {
                 <div className="container">
                     <div className="flex justify-between h-16">
                         <div className="flex-shrink-0 flex items-center">
-                            <a href="#" className="text-white font-bold text-xl">My App</a>
+                            <Link to="/" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Scheduler</Link>
                         </div>
                         <div className="flex items-center">
                             <div className="hidden md:block">
@@ -101,13 +101,13 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
+                {/* <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Account</a>
                         <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Appointment</a>
 
                     </div>
-                </div>
+                </div> */}
             </nav>
         </>
     )
