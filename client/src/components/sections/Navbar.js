@@ -5,13 +5,8 @@ import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
     const [isDropDownOpen, setDropDown] = useState(false);
     const [isAdminDropDownOpen, setAdminDropDown] = useState(false);
-
-    const toggleNavbar = () => {
-        setIsOpen(!isOpen);
-    };
 
     const toggleDropdown = () => {
         setDropDown(!isDropDownOpen);

@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { FaEdit, FaTrashAlt } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const LocationList = () => {
     const [locations, setLocations] = useState([]);
@@ -128,6 +130,8 @@ const LocationList = () => {
                         <th className="px-4 py-2">Street Address</th>
                         <th className="px-4 py-2">Apt., Suite</th>
                         <th className="px-4 py-2">Phone</th>
+                        <th className="px-2 py-2 text-left text-sm">Edit</th>
+                        <th className="px-2 py-2 text-left text-sm">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -138,6 +142,8 @@ const LocationList = () => {
                             <td className="border px-4 py-2">{location.street_address}</td>
                             <td className="border px-4 py-2">{location.street_address_2}</td>
                             <td className="border px-4 py-2">{location.phone}</td>
+                            <td className="border px-2 py-2"><Link to={`/locations/${location.id}`} className="flex justify-center text-orange-400"><FaEdit /></Link></td>
+                            <td className="border px-2 py-2"><Link to={location.id} className="flex justify-center text-red-800"><FaTrashAlt /></Link></td>
                         </tr>
                     ))}
                 </tbody>
