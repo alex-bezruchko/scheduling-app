@@ -6,6 +6,7 @@ import Home from './App.js';
 import Layout from './components/Layout.js';
 
 import Account from './components/pages/Account.js';
+import EditUser from './components/pages/forms/EditUser.js';
 import UserList from './components/pages/admin/Userlist.js';
 import Locations from './components/pages/admin/Locations.js';
 import Appointments from './components/pages/admin/Appointments.js';
@@ -25,6 +26,8 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="account" element={<Account />} />
+          <Route path="/users/:id" element={<EditUser />} />
+
           <Route path="users" element={<UserList />} />
           <Route path="locations" element={<Locations />} />
           <Route path="create" element={<CreateAccount />} />
