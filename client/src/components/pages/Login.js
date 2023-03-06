@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
+    const navigate = useNavigate();
 
-    const [email, setEmail] = useState("");
+    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-
+    const [loginError, setLoginError] = useState(false);
     const login = (event) => {
 
         event.preventDefault();
 
         const data = {
-            email: email,
+            username: username,
             password: password,
         };
         // Store jwt in cookies (install cookies)
@@ -21,10 +22,17 @@ function Login() {
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
-                }
+                },
+                withCredentials: false,
             })
             .then((response) => {
                 console.log(response)
+                if (response.data.token) {
+                    navigate('/')
+                    setLoginError(false)
+                } else {
+                    setLoginError(true)
+                }
                 // Handle successful login
             })
             .catch((error) => {
@@ -47,8 +55,8 @@ function Login() {
                                 <input
                                     type="text"
                                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                    value={email}
-                                    onChange={(event) => setEmail(event.target.value)}
+                                    value={username}
+                                    onChange={(event) => setUsername(event.target.value)}
                                 ></input>
                             </div>
                         </div>
@@ -65,6 +73,11 @@ function Login() {
                                 ></input>
                             </div>
                         </div>
+                        {loginError ?
+                            <p className="text-red-500">Invalid credentials</p>
+                            : <></>
+                        }
+
                     </div>
 
                     <div className="flex items-start">
