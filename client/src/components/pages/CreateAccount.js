@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from 'react-hook-form';
 import axios from "axios";
 
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
@@ -29,7 +29,8 @@ const CreateAccount = () => {
 
 
     const onSubmit = async (form) => {
-        const isFormValid = await schema.validate(form).then((r) => submitUser(form))
+        const isFormValid = await schema.validate(form).then((r) => submitUser(form));
+        console.log(isFormValid);
     }
 
     const submitUser = (form) => {
