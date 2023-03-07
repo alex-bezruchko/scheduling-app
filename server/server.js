@@ -89,6 +89,8 @@ app.post("/login", (req, response) => {
 })
 
 app.post('/register', (req, res) => {
+    req.accepts('application/json');
+
     const body = req.body
 
     bcrypt.hash(body.password, 12)
